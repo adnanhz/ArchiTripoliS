@@ -1,9 +1,5 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div id="app">    
     <router-view/>
   </div>
 </template>
@@ -18,8 +14,6 @@
 }
 
 #nav {
-  padding: 30px;
-
   a {
     font-weight: bold;
     color: #2c3e50;
@@ -28,5 +22,20 @@
       color: #42b983;
     }
   }
+}
+.container-fluid {
+  padding: 0px;
+}
+
+@font-face {
+font-family: "limelight";
+src: url("~@/assets/Limelight.ttf");
+}
+p {
+  font-family: "limelight";
+}
+
+span {
+  font-family: "limelight";
 }
 </style>
