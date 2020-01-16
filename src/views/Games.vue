@@ -33,7 +33,7 @@ export default {
 </script>
 <style scoped>
 .games {
-  background-image: url("~@/assets/background.jpg");
+  background-image: url("~@/assets/wall.jpg");
   min-height: 100vh;
 }
 

@@ -30,7 +30,7 @@
     </div>
     <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
       <HomeBlock v-if="homeBlock.show" :title="homeBlock.title" @continue="goToPage">
-        <div v-html="homeBlock.description" style="font-size: 25px; overflow-y: scroll; max-height: 100%;" ></div>
+        <div v-html="homeBlock.description" style="font-size: 22px; overflow-y: scroll; max-height: 100%;" ></div>
       </HomeBlock>
     </div>
   </div>
@@ -123,6 +123,8 @@ export default {
 <style scoped>
 .home {
   background-image: url("~@/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   min-height: 100vh;
 }
 </style>

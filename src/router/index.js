@@ -3,6 +3,10 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Timeline from '../views/Timeline.vue'
 import Sites from '../views/Sites.vue'
+import SitesVideos from '../views/sites/Videos.vue'
+import SitesVideosYoutube from '../views/sites/VideosYoutube.vue'
+import SitesVideosEdpuzzle from '../views/sites/VideosEdpuzzle.vue'
+import SitesEbooks from '../views/sites/Ebooks.vue'
 import Chronology from '../views/Chronology.vue'
 import Games from '../views/Games.vue'
 import Evaluation from '../views/Evaluation.vue'
@@ -27,6 +31,22 @@ const routes = [
   {
     path: '/sites-historiques',
     component: Sites
+  },
+  {
+    path: '/sites-historiques/videos',
+    component: SitesVideos
+  },
+  {
+    path: '/sites-historiques/videos/youtube',
+    component: SitesVideosYoutube
+  },
+  {
+    path: '/sites-historiques/videos/edpuzzle',
+    component: SitesVideosEdpuzzle
+  },    
+  {
+    path: '/sites-historiques/ebooks',
+    component: SitesEbooks
   },
   {
     path: '/frise-chronologique',

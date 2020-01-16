@@ -13,49 +13,28 @@
         <MenuItem
           style="margin-bottom: 150px; width: 70%; font-size: 40px;"
           bgcolor="#3f5756"
-          title="Pendu"
+          title="Sites historiques - Ebooks"
         />
       </div>
       <div
-        class="game-category pendu"
+        class="game-category ebook"
         data-toggle="modal"
         data-target="#jeu1"
         @click="iframeUrl = 'https://read.bookcreator.com/OpV1AYH7OQhgKCHzRYvpDjmNZjl1/xL4EJfahQOW_5LZCK3xP6g'"
       >
         <div class="game-category-inner">1</div>
+        <h2>Hammam Ezzeddine</h2>
       </div>
       <div
-        class="game-category pendu"
+        class="game-category ebook"
         data-toggle="modal"
         data-target="#jeu1"
-        @click="iframeUrl = 'https://www.bookwidgets.com/play/MKGLGX'"
+        @click="iframeUrl = 'https://read.bookcreator.com/OpV1AYH7OQhgKCHzRYvpDjmNZjl1/HWaICuXYSfiYVdbfw9WZjA'"
       >
         <div class="game-category-inner">2</div>
-      </div>
-      <div
-        class="game-category pendu"
-        data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://www.bookwidgets.com/play/AKGLH9'"
-      >
-        <div class="game-category-inner">3</div>
-      </div>
-      <div
-        class="game-category pendu"
-        data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://www.bookwidgets.com/play/VKB93L'"
-      >
-        <div class="game-category-inner">4</div>
-      </div>
-      <div
-        class="game-category pendu"
-        data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://www.bookwidgets.com/play/JKB9V5'"
-      >
-        <div class="game-category-inner">5</div>
-      </div>                 
+        <h2>La Grande Mosquée al-Mansouri</h2>
+      </div>               
+      
     </div>
     <!-- Modal -->
     <div class="modal fade" id="jeu1" tabindex="-1">
@@ -68,7 +47,8 @@
           </div>
           <div class="modal-body">
             <iframe
-              style="width: 100%; overflow-y: scroll; height: 100%;"
+            frameborder="0" allowfullscreen
+              style="width: 100%; height: 100%; overflow-y: scroll;"
               :src="iframeUrl"
             ></iframe>
           </div>
@@ -110,6 +90,14 @@ export default {
 
 .memoire {
   background-image: url("~@/assets/memoire.png");
+}
+
+.ebook { 
+    background-image: url("~@/assets/book logo2.png");
+}
+
+.video { 
+    background-image: url("~@/assets/camera.png");
 }
 
 .game-category {

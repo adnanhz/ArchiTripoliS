@@ -13,52 +13,39 @@
         <MenuItem
           style="margin-bottom: 150px; width: 70%; font-size: 40px;"
           bgcolor="#3f5756"
-          title="Pendu"
+          title="Vidéos"
         />
       </div>
+      <div style="color: black; position: absolute">
+              <h1>Hammam Ezzeddine</h1>
+      </div>
       <div
-        class="game-category pendu"
+        class="game-category video"
         data-toggle="modal"
         data-target="#jeu1"
-        @click="iframeUrl = 'https://read.bookcreator.com/OpV1AYH7OQhgKCHzRYvpDjmNZjl1/xL4EJfahQOW_5LZCK3xP6g'"
+        @click="iframeUrl = 'https://www.youtube.com/embed/sZg4YWNQOts'"
       >
         <div class="game-category-inner">1</div>
       </div>
       <div
-        class="game-category pendu"
+        class="game-category video"
         data-toggle="modal"
         data-target="#jeu1"
-        @click="iframeUrl = 'https://www.bookwidgets.com/play/MKGLGX'"
+        @click="iframeUrl = 'https://www.youtube.com/embed/HU0YAsdijWs'"
       >
         <div class="game-category-inner">2</div>
       </div>
       <div
-        class="game-category pendu"
+        class="game-category video"
         data-toggle="modal"
         data-target="#jeu1"
-        @click="iframeUrl = 'https://www.bookwidgets.com/play/AKGLH9'"
+        @click="iframeUrl = 'https://www.youtube.com/embed/vbRORqIVsbA'"
       >
         <div class="game-category-inner">3</div>
-      </div>
-      <div
-        class="game-category pendu"
-        data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://www.bookwidgets.com/play/VKB93L'"
-      >
-        <div class="game-category-inner">4</div>
-      </div>
-      <div
-        class="game-category pendu"
-        data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://www.bookwidgets.com/play/JKB9V5'"
-      >
-        <div class="game-category-inner">5</div>
       </div>                 
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="jeu1" tabindex="-1">
+    <div class="modal fade" id="jeu1" tabindex="-1" v-if="showModal">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -68,7 +55,8 @@
           </div>
           <div class="modal-body">
             <iframe
-              style="width: 100%; overflow-y: scroll; height: 100%;"
+            frameborder="0" allowfullscreen
+              style="width: 100%; height: 100%; overflow-y: scroll;"
               :src="iframeUrl"
             ></iframe>
           </div>
@@ -82,7 +70,7 @@ import MenuItem from "@/components/MenuItem";
 export default {
   data() {
     return {
-      iframeUrl: ''
+      iframeUrl: '',
     }
   },
   components: {
@@ -110,6 +98,14 @@ export default {
 
 .memoire {
   background-image: url("~@/assets/memoire.png");
+}
+
+.ebook { 
+    background-image: url("~@/assets/book logo2.png");
+}
+
+.video { 
+    background-image: url("~@/assets/camera.png");
 }
 
 .game-category {
