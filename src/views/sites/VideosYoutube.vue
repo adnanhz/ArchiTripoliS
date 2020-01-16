@@ -25,7 +25,8 @@
         data-target="#jeu1"
         @click="iframeUrl = 'https://www.youtube.com/embed/sZg4YWNQOts'"
       >
-        <div class="game-category-inner">1</div>
+        <div class="game-category-inner"></div>
+        <h1 style="color: black;">1</h1>
       </div>
       <div
         class="game-category video"
@@ -33,7 +34,8 @@
         data-target="#jeu1"
         @click="iframeUrl = 'https://www.youtube.com/embed/HU0YAsdijWs'"
       >
-        <div class="game-category-inner">2</div>
+        <div class="game-category-inner"></div>
+        <h1 style="color: black;">2</h1>
       </div>
       <div
         class="game-category video"
@@ -41,11 +43,12 @@
         data-target="#jeu1"
         @click="iframeUrl = 'https://www.youtube.com/embed/vbRORqIVsbA'"
       >
-        <div class="game-category-inner">3</div>
+        <div class="game-category-inner"></div>
+        <h1 style="color: black;">3</h1>
       </div>                 
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="jeu1" tabindex="-1" v-if="showModal">
+    <div class="modal fade" id="jeu1" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -116,7 +119,7 @@ export default {
   height: 200px;
 }
 .game-category-inner {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.0);
   width: 200px;
   height: 200px;
   display: flex;

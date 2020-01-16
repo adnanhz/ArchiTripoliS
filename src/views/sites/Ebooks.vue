@@ -22,8 +22,8 @@
         data-target="#jeu1"
         @click="iframeUrl = 'https://read.bookcreator.com/OpV1AYH7OQhgKCHzRYvpDjmNZjl1/xL4EJfahQOW_5LZCK3xP6g'"
       >
-        <div class="game-category-inner">1</div>
-        <h2>Hammam Ezzeddine</h2>
+        <div class="game-category-inner"></div>
+        <h2 style="color: black;">Hammam Ezzeddine</h2>
       </div>
       <div
         class="game-category ebook"
@@ -31,8 +31,8 @@
         data-target="#jeu1"
         @click="iframeUrl = 'https://read.bookcreator.com/OpV1AYH7OQhgKCHzRYvpDjmNZjl1/HWaICuXYSfiYVdbfw9WZjA'"
       >
-        <div class="game-category-inner">2</div>
-        <h2>La Grande Mosquée al-Mansouri</h2>
+        <div class="game-category-inner"></div>
+        <h2 style="color: black">La Grande&nbsp;Mosquée<br/>al-Mansouri</h2>
       </div>               
       
     </div>
@@ -108,7 +108,7 @@ export default {
   height: 200px;
 }
 .game-category-inner {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0);
   width: 200px;
   height: 200px;
   display: flex;

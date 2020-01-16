@@ -25,7 +25,7 @@
         data-target="#jeu1"
         @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1a719f8047cc413c46f67e/watch'"
       >
-        <div class="game-category-inner">1</div>
+        <div class="game-category-inner"></div>
         <h2 style="color: black;">vedfavj</h2>
       </div>
       <div
@@ -34,7 +34,7 @@
         data-target="#jeu1"
         @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1a718175f58e413552c8a6/watch'"
       >
-        <div class="game-category-inner">2</div>
+        <div class="game-category-inner"></div>
         <h2 style="color: black;">hubolge</h2>
       </div>
       <div
@@ -43,7 +43,7 @@
         data-target="#jeu1"
         @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1236c589522e40ac333013/watch'"
       >
-        <div class="game-category-inner">3</div>
+        <div class="game-category-inner"></div>
         <h2 style="color: black;">tusetof</h2>
       </div>                 
     </div>
@@ -119,7 +119,7 @@ export default {
   height: 200px;
 }
 .game-category-inner {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.0);
   width: 200px;
   height: 200px;
   display: flex;

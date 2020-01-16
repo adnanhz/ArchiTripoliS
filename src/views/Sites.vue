@@ -16,17 +16,15 @@
           title="Sites historiques"
         />
       </div>
-      <div style="width: 50%; display: flex; align-items: center; flex-direction: column; justify-content: center;">
+      <div style="width: 50%; display: flex; align-items: flex-start; padding-left: 130px; flex-direction: column; justify-content: center;">
         <div
-          class="game-category ebook"
+          class="game-category ebook"   
           data-toggle="modal"
           data-target="#jeu1"
           @click="openBlock('ebook')"
         ></div>
         <div
           class="game-category video"
-          data-toggle="modal"
-          data-target="#jeu1"
           @click="$router.push('/sites-historiques/videos')"
         ></div>
       </div>
@@ -35,7 +33,7 @@
         <HomeBlock v-if="homeBlock.show" :title="homeBlock.title" @continue="goToPage">
           <div
             v-html="homeBlock.description"
-            style="font-size: 25px; overflow-y: scroll; max-height: 100%;"
+            style="font-size: 25px; overflow-y: scroll; max-height: 100%; text-align: left; padding-left: 15px;"
           ></div>
         </HomeBlock>
       </div>

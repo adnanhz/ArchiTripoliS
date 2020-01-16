@@ -12,7 +12,7 @@
       <div
         style="display: flex; flex-direction: column; justify-content: space-between; width: 550px; margin-left: 15px;"
       >
-        <MenuItem bgcolor="#d5c2a2" title="Tripoli au cours du temps" @click="openBlock('temps')" />
+        <MenuItem bgcolor="#ad9376" title="Tripoli au cours du temps" @click="openBlock('temps')" />
         <MenuItem
           bgcolor="#cb9323"
           title="Les sites historiques"
@@ -24,13 +24,13 @@
           @click="openBlock('frise-chronologique')"
         />
         <MenuItem bgcolor="#3f5756" title="Jeux" @click="openBlock('jeux')" />
-        <MenuItem bgcolor="#172639" title="Évalutation" @click="openBlock('evaluation')" />
         <MenuItem bgcolor="#576359" title="Projet" @click="openBlock('projet')" />
+        <MenuItem bgcolor="#172639" title="Évalutation" @click="openBlock('evaluation')" />
       </div>
     </div>
     <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
       <HomeBlock v-if="homeBlock.show" :title="homeBlock.title" @continue="goToPage">
-        <div v-html="homeBlock.description" style="font-size: 22px; overflow-y: scroll; max-height: 100%;" ></div>
+        <div v-html="homeBlock.description" style="font-size: 22px; overflow-y: scroll; max-height: 100%; text-align: left; padding-left: 15px;" ></div>
       </HomeBlock>
     </div>
   </div>
@@ -88,7 +88,7 @@ export default {
         case "sites-historiques":
           this.homeBlock.title = "Les sites historiques";
           this.homeBlock.description = 
-          `Cette partie présente trois sites historiques:
+          `<div style="margin-left: 15px;">Cette partie présente trois sites historiques:</div>
           <ul>
           <li>Trois vidéos présentent la citadelle de Tripoli (le château de Saint-Gilles)</li>
           <li>Un livre interactif présente le hammam Ezzedine.</li>

@@ -17,13 +17,11 @@
         />
       </div>
       <div
-        style="width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;"
+        style="width: 50%; display: flex; flex-direction: column; align-items: flex-start; padding-left: 130px; justify-content: center;"
       >
-        <div style="display: flex; flex-direction: column; color: black;">
+        <div style="display: flex; flex-direction: column; color: black; padding-left: 25px;">
           <div
             class="game-category video"
-            data-toggle="modal"
-            data-target="#jeu1"
             @click="$router.push('/sites-historiques/videos/youtube')"
           ></div>
           <h2>Vidéos</h2>
@@ -40,7 +38,7 @@
 
       <div style="width: 50%; height: 400px;">
         <HomeBlock v-if="homeBlock.show" :title="homeBlock.title" @continue="goToPage">
-          <div style="font-size: 18px; overflow-y: scroll; max-height: 100%;">
+          <div style="font-size: 18px; overflow-y: scroll; max-height: 100%; padding-left: 15px; text-align: left;">
             <u>Remarque</u> : Avant de commencer les activités, vous devez télécharger l'application "Edpuzzle" sur votre tablette.
             <br />Allez à la découverte de la Citadelle de Tripoli (Le Château de Saint-Gilles) à travers trois vidéos au cours desquelles vous serez évalués.
             <div    @click="iframeUrl = 'https://tinyurl.com/tj3dbpa'"     data-toggle="modal"
