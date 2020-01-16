@@ -17,7 +17,7 @@
         />
       </div>
       <div style="color: black; position: absolute">
-              <h1>Hammam Ezzeddine</h1>
+              <h1>Le château de Saint-Gilles / La citadelle de Tripoli</h1>
       </div>
       <div
         class="game-category video"
