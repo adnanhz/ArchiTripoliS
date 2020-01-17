@@ -29,10 +29,30 @@
       </div>
     </div>
     <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
-      <HomeBlock v-if="homeBlock.show" :title="homeBlock.title" @continue="goToPage">
+      <HomeBlock v-if="homeBlock.show" :title="homeBlock.title" @continue="goToPage"
+      @openIframe="(url) => iframeUrl = url">
         <div v-html="homeBlock.description" style="font-size: 22px; overflow-y: scroll; max-height: 100%; text-align: left; padding-left: 15px;" ></div>
       </HomeBlock>
     </div>
+    <div class="modal fade" id="jeu1" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="height: 80vh;">
+            <iframe
+              frameborder="0"
+              allowfullscreen
+              style="width: 100%; height: 100%; overflow-y: scroll;"
+              :src="iframeUrl"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>    
   </div>
 </template>
 
@@ -48,7 +68,8 @@ export default {
         show: false,
         title: "",
         description: ""
-      }
+      },
+      iframeUrl: ""
     };
   },
   components: {
@@ -71,7 +92,6 @@ export default {
           this.$router.push("/jeux");
           break;
         case "Évaluation":
-          this.$router.push("/evaluation");
           break;
         case "Projet":
           this.$router.push("/projets");
@@ -109,11 +129,17 @@ export default {
           break;
         case "evaluation":
           this.homeBlock.title = "Évaluation";
-          this.homeBlock.description = "";
+          this.homeBlock.description = `
+          Merci de bien vouloir consacrer quelques minutes à répondre à ces questionnaires. <br />  
+          Cliquez sur le lien pour accéder au sondage.
+          `;
           break;
         case "projet":
           this.homeBlock.title = "Projet";
-          this.hoeBlock.description = "";
+          this.homeBlock.description = `
+          Créer une vidéo animée sur PowToon pour présenter un site historique de votre choix.<br />
+          Cliquez sur le logo de PowToon pour regarder un tutoriel explicatif concernant l'usage de ce logiciel.
+          `;
           break;
       }
     }

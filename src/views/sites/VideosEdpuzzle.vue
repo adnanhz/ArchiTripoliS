@@ -59,7 +59,7 @@
           <div class="modal-body">
             <iframe
             frameborder="0" allowfullscreen
-              style="width: 100%; overflow-y: scroll;"
+              style="width: 100%; height: 100%; overflow-y: scroll;"
               :src="iframeUrl"
             ></iframe>
           </div>

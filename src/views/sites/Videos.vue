@@ -28,21 +28,24 @@
         </div>
 
         <div style="display: flex; flex-direction: column; align-items: center; color: black;">
-          <div
-            class="game-category video"
-            @click="openBlock('videos-quiz')"
-          ></div>
+          <div class="game-category video" @click="openBlock('videos-quiz')"></div>
           <h2>Vidéos + Quiz</h2>
         </div>
       </div>
 
       <div style="width: 50%; height: 400px;">
         <HomeBlock v-if="homeBlock.show" :title="homeBlock.title" @continue="goToPage">
-          <div style="font-size: 18px; overflow-y: scroll; max-height: 100%; padding-left: 15px; text-align: left;">
+          <div
+            style="font-size: 18px; overflow-y: scroll; max-height: 100%; padding-left: 15px; text-align: left;"
+          >
             <u>Remarque</u> : Avant de commencer les activités, vous devez télécharger l'application "Edpuzzle" sur votre tablette.
             <br />Allez à la découverte de la Citadelle de Tripoli (Le Château de Saint-Gilles) à travers trois vidéos au cours desquelles vous serez évalués.
-            <div    @click="iframeUrl = 'https://tinyurl.com/tj3dbpa'"     data-toggle="modal"
-        data-target="#jeu1" class="edpuzzle-logo" ></div>
+            <div
+              @click="iframeUrl = 'https://tinyurl.com/tj3dbpa'"
+              data-toggle="modal"
+              data-target="#jeu1"
+              class="edpuzzle-logo"
+            ></div>
           </div>
         </HomeBlock>
       </div>
@@ -79,7 +82,7 @@ export default {
         title: "",
         description: "",
         showExplication: false,
-        iframeUrl: 'https://tinyurl.com/tj3dbpa'
+        iframeUrl: "https://tinyurl.com/tj3dbpa"
       }
     };
   },
