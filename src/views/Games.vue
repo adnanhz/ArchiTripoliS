@@ -38,18 +38,22 @@ export default {
 }
 
 .mots-croises {
+    cursor: pointer;
   background-image: url("~@/assets/mots croises.png");
 }
 
 .puzzles {
+    cursor: pointer;
   background-image: url("~@/assets/puzzle.png");
 }
 
 .pendu {
+    cursor: pointer;
   background-image: url("~@/assets/pendu.png");
 }
 
 .memoire {
+    cursor: pointer;
   background-image: url("~@/assets/memoire.png");
 }
 
