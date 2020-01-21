@@ -7,7 +7,7 @@
         <span
           style="width: 27%; height: 100px; background-color: white; 
                     padding: 15px; margin-top: 10px; border: 6px solid #f5f5f5;
-                    font-size: 40px;"
+                    font-size: 40px;cursor: pointer;"
           @click="$router.back()"
         >Retour</span>
         <MenuItem
@@ -20,7 +20,7 @@
         <div
           class="game-category ebook"   
           data-toggle="modal"
-          data-target="#jeu1"
+          data-target="#jeu"
           @click="openBlock('ebook')"
         ></div>
         <div
@@ -112,6 +112,7 @@ livres interactifs au cours desquels vos connaissances seront évaluées.`;
 }
 
 .game-category {
+  cursor: pointer;
   background-repeat: no-repeat;
   background-size: 100%;
   color: white;

@@ -6,26 +6,26 @@
     <div style="width: 100%; display: flex; justify-content: space-between;">
         <span style="width: 27%; height: 100%; background-color: white; 
                     padding: 15px; margin-top: 10px; border: 6px solid #f5f5f5;
-                    font-size: 40px;"
+                    font-size: 40px; cursor: pointer;"
                 @click="$router.back()">
            Retour
         </span>
         <MenuItem style="margin-bottom: 150px; width: 70%; font-size: 40px;" bgcolor="#3f5756" title="Mots croisés" />
     </div>
-      <div class="game-category mots-croises" data-toggle="modal" data-target="#jeu1">
+      <div class="game-category mots-croises" data-toggle="modal" data-target="#jeu">
         <div class="game-category-inner">1</div>
       </div>
     </div>
 
 
 <!-- Modal -->
-<div class="modal fade" id="jeu1" tabindex="-1">
+<div class="modal fade" id="jeu" tabindex="-1">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+            <button type="button" class="btn btn-primary" @click="$router.back()" style="cursor: pointer;">
+              Retour
+            </button>
       </div>
       <div class="modal-body">
         <iframe style="width: 100%; overflow-y: scroll; height: 100%;" src="https://www.bookwidgets.com/play/MK4MH9">

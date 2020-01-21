@@ -7,7 +7,7 @@
         <span
           style="width: 27%; height: 100%; background-color: white; 
                     padding: 15px; margin-top: 10px; border: 6px solid #f5f5f5;
-                    font-size: 40px;"
+                    font-size: 40px;cursor: pointer;"
           @click="$router.back()"
         >Retour</span>
         <MenuItem
@@ -22,8 +22,8 @@
       <div
         class="game-category video"
         data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://www.youtube.com/embed/sZg4YWNQOts'"
+        data-target="#jeu"
+        style="cursor: pointer" @click="iframeUrl = 'https://www.youtube.com/embed/sZg4YWNQOts'"
       >
         <div class="game-category-inner"></div>
         <h1 style="color: black;">1</h1>
@@ -31,8 +31,8 @@
       <div
         class="game-category video"
         data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://www.youtube.com/embed/HU0YAsdijWs'"
+        data-target="#jeu"
+        style="cursor: pointer" @click="iframeUrl = 'https://www.youtube.com/embed/HU0YAsdijWs'"
       >
         <div class="game-category-inner"></div>
         <h1 style="color: black;">2</h1>
@@ -40,20 +40,20 @@
       <div
         class="game-category video"
         data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://www.youtube.com/embed/vbRORqIVsbA'"
+        data-target="#jeu"
+        style="cursor: pointer" @click="iframeUrl = 'https://www.youtube.com/embed/vbRORqIVsbA'"
       >
         <div class="game-category-inner"></div>
         <h1 style="color: black;">3</h1>
       </div>                 
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="jeu1" tabindex="-1">
+    <div class="modal fade" id="jeu" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+            <button type="button" class="btn btn-primary" @click="$router.back()" style="cursor: pointer;">
+              Retour
             </button>
           </div>
           <div class="modal-body">

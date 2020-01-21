@@ -7,7 +7,7 @@
         <span
           style="width: 27%; height: 100%; background-color: white; 
                     padding: 15px; margin-top: 10px; border: 6px solid #f5f5f5;
-                    font-size: 40px;"
+                    font-size: 40px;cursor: pointer;"
           @click="$router.back()"
         >Retour</span>
         <MenuItem
@@ -22,8 +22,8 @@
       <div
         class="game-category video"
         data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1a719f8047cc413c46f67e/watch'"
+        data-target="#jeu"
+        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1a719f8047cc413c46f67e/watch'"
       >
         <div class="game-category-inner"></div>
         <h2 style="color: black;">vedfavj</h2>
@@ -31,8 +31,8 @@
       <div
         class="game-category video"
         data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1a718175f58e413552c8a6/watch'"
+        data-target="#jeu"
+        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1a718175f58e413552c8a6/watch'"
       >
         <div class="game-category-inner"></div>
         <h2 style="color: black;">hubolge</h2>
@@ -40,20 +40,20 @@
       <div
         class="game-category video"
         data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1236c589522e40ac333013/watch'"
+        data-target="#jeu"
+        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1236c589522e40ac333013/watch'"
       >
         <div class="game-category-inner"></div>
         <h2 style="color: black;">tusetof</h2>
       </div>                 
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="jeu1" tabindex="-1">
+    <div class="modal fade" id="jeu" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+            <button type="button" class="btn btn-primary" @click="$router.back()" style="cursor: pointer;">
+              Retour
             </button>
           </div>
           <div class="modal-body">

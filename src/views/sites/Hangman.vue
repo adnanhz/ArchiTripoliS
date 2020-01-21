@@ -7,7 +7,7 @@
         <span
           style="width: 27%; height: 100%; background-color: white; 
                     padding: 15px; margin-top: 10px; border: 6px solid #f5f5f5;
-                    font-size: 40px;"
+                    font-size: 40px; cursor: pointer;"
           @click="$router.back()"
         >Retour</span>
         <MenuItem
@@ -19,51 +19,51 @@
       <div
         class="game-category pendu"
         data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://read.bookcreator.com/OpV1AYH7OQhgKCHzRYvpDjmNZjl1/xL4EJfahQOW_5LZCK3xP6g'"
+        data-target="#jeu"
+        style="cursor: pointer" @click="iframeUrl = 'https://read.bookcreator.com/OpV1AYH7OQhgKCHzRYvpDjmNZjl1/xL4EJfahQOW_5LZCK3xP6g'"
       >
         <div class="game-category-inner">1</div>
       </div>
       <div
         class="game-category pendu"
         data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://www.bookwidgets.com/play/MKGLGX'"
+        data-target="#jeu"
+        style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/MKGLGX'"
       >
         <div class="game-category-inner">2</div>
       </div>
       <div
         class="game-category pendu"
         data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://www.bookwidgets.com/play/AKGLH9'"
+        data-target="#jeu"
+        style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/AKGLH9'"
       >
         <div class="game-category-inner">3</div>
       </div>
       <div
         class="game-category pendu"
         data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://www.bookwidgets.com/play/VKB93L'"
+        data-target="#jeu"
+        style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/VKB93L'"
       >
         <div class="game-category-inner">4</div>
       </div>
       <div
         class="game-category pendu"
         data-toggle="modal"
-        data-target="#jeu1"
-        @click="iframeUrl = 'https://www.bookwidgets.com/play/JKB9V5'"
+        data-target="#jeu"
+        style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/JKB9V5'"
       >
         <div class="game-category-inner">5</div>
       </div>                 
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="jeu1" tabindex="-1">
+    <div class="modal fade" id="jeu" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+            <button type="button" class="btn btn-primary" @click="$router.back()" style="cursor: pointer;">
+              Retour
             </button>
           </div>
           <div class="modal-body">

@@ -12,20 +12,20 @@
       <div
         style="display: flex; flex-direction: column; justify-content: space-between; width: 550px; margin-left: 15px;"
       >
-        <MenuItem bgcolor="#ad9376" title="Tripoli au cours du temps" @click="openBlock('temps')" />
-        <MenuItem
+        <MenuItem style="cursor: pointer;" bgcolor="#ad9376" title="Tripoli au cours du temps" @click="openBlock('temps')" />
+        <MenuItem style="cursor: pointer;"
           bgcolor="#cb9323"
-          title="Les sites historiques"
+          title="Sites historiques"
           @click="openBlock('sites-historiques')"
         />
-        <MenuItem
+        <MenuItem style="cursor: pointer;"
           bgcolor="#926d33"
           title="Frise chronologique"
           @click="openBlock('frise-chronologique')"
         />
-        <MenuItem bgcolor="#3f5756" title="Jeux" @click="openBlock('jeux')" />
-        <MenuItem bgcolor="#576359" title="Projet" @click="openBlock('projet')" />
-        <MenuItem bgcolor="#172639" title="Évalutation" @click="openBlock('evaluation')" />
+        <MenuItem style="cursor: pointer;" bgcolor="#3f5756" title="Jeux" @click="openBlock('jeux')" />
+        <MenuItem style="cursor: pointer;" bgcolor="#576359" title="Projet" @click="openBlock('projet')" />
+        <MenuItem style="cursor: pointer;" bgcolor="#172639" title="Évalutation" @click="openBlock('evaluation')" />
       </div>
     </div>
     <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
@@ -34,12 +34,12 @@
         <div v-html="homeBlock.description" style="font-size: 22px; overflow-y: scroll; max-height: 100%; text-align: left; padding-left: 15px;" ></div>
       </HomeBlock>
     </div>
-    <div class="modal fade" id="jeu1" tabindex="-1">
+    <div class="modal fade" id="jeu" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+            <button type="button" class="btn btn-primary" @click="$router.back()" style="cursor: pointer;">
+              Retour
             </button>
           </div>
           <div class="modal-body" style="height: 80vh;">
@@ -82,7 +82,7 @@ export default {
         case "Tripoli au cours du temps":
           this.$router.push("/temps");
           break;
-        case "Les sites historiques":
+        case "Sites historiques":
           this.$router.push("/sites-historiques");
           break;
         case "Frise chronologique":
@@ -106,7 +106,7 @@ export default {
           this.homeBlock.description = "Une vidéo animée vous présente les différents périodes et évènements historiques qu'a traversé Tripoli (la deuxième ville du Liban) et qui ont abouti à la création de son riche patrimoine architectural.";
           break;
         case "sites-historiques":
-          this.homeBlock.title = "Les sites historiques";
+          this.homeBlock.title = "Sites historiques";
           this.homeBlock.description = 
           `<div style="margin-left: 15px;">Cette partie présente trois sites historiques:</div>
           <ul>

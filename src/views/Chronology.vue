@@ -7,7 +7,7 @@
         <span
           style="width: 27%; height: 100%; background-color: white; 
                     padding: 10px; margin-top: 20px; border: 6px solid #f5f5f5;
-                    font-size: 30px; z-index: 999999"
+                    font-size: 30px; z-index: 999999; cursor: pointer;"
           @click="$router.back()"
         >Retour</span>
         <MenuItem
@@ -18,7 +18,7 @@
       </div>
     </div>
     <!-- Modal -->
-    <div class="modal in" style="display: block; height: 90vh; top: 70px;" id="jeu1" tabindex="-1">
+    <div class="modal in" style="display: block; height: 90vh; top: 70px;" id="jeu" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-body">

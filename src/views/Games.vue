@@ -6,7 +6,7 @@
     <div style="width: 100%; display: flex; justify-content: space-between;">
         <span style="width: 27%; height: 100%; background-color: white; 
                     padding: 15px; margin-top: 10px; border: 6px solid #f5f5f5;
-                    font-size: 40px;"
+                    font-size: 40px;cursor: pointer;"
               @click="$router.back()">
            Retour
         </span>

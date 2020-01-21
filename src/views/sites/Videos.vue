@@ -7,7 +7,7 @@
         <span
           style="width: 27%; height: 100px; background-color: white; 
                     padding: 15px; margin-top: 10px; border: 6px solid #f5f5f5;
-                    font-size: 40px;"
+                    font-size: 40px;cursor: pointer;"
           @click="$router.back()"
         >Retour</span>
         <MenuItem
@@ -41,21 +41,21 @@
             <u>Remarque</u> : Avant de commencer les activités, vous devez télécharger l'application "Edpuzzle" sur votre tablette.
             <br />Allez à la découverte de la Citadelle de Tripoli (Le Château de Saint-Gilles) à travers trois vidéos au cours desquelles vous serez évalués.
             <div
-              @click="iframeUrl = 'https://tinyurl.com/tj3dbpa'"
+              style="cursor: pointer" @click="iframeUrl = 'https://tinyurl.com/tj3dbpa'"
               data-toggle="modal"
-              data-target="#jeu1"
+              data-target="#jeu"
               class="edpuzzle-logo"
             ></div>
           </div>
         </HomeBlock>
       </div>
     </div>
-    <div class="modal fade" id="jeu1" tabindex="-1">
+    <div class="modal fade" id="jeu" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+            <button type="button" class="btn btn-primary" @click="$router.back()" style="cursor: pointer;">
+              Retour
             </button>
           </div>
           <div class="modal-body">
@@ -141,6 +141,7 @@ export default {
 }
 
 .game-category {
+  cursor: pointer;
   background-repeat: no-repeat;
   background-size: 100%;
   color: white;
