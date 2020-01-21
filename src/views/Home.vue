@@ -103,7 +103,7 @@ export default {
       switch (ref) {
         case "temps":
           this.homeBlock.title = "Tripoli au cours du temps";
-          this.homeBlock.description = "Une vidéo animée vous présente les différents périodes et évènements historiques qu'a traversé Tripoli (la deuxième ville du Liban) et qui ont abouti à la création de son riche patrimoine architectural.";
+          this.homeBlock.description = "Une vidéo animée présente les différents périodes et évènements historiques qu'a traversé Tripoli (la deuxième ville du Liban) et qui ont abouti à la création de son riche patrimoine architectural.";
           break;
         case "sites-historiques":
           this.homeBlock.title = "Sites historiques";
@@ -119,26 +119,33 @@ export default {
         case "frise-chronologique":
           this.homeBlock.title = "Frise chronologique";
           this.homeBlock.description = `
-          Découvrez un grand nombre de sites historiques (mosquées, églises, caravansérails, hammams, …) qui se présentent sur une ligne chronologique en 2D ou 3D.<br />
-          Cliquez sur un site pour voir ses propres photos et pour découvrir : sa date de construction, son emplacement, son fondateur et l'époque à laquelle il appartient.
+          Découvrez un grand nombre de sites historiques (mosquées, églises, caravansérails,
+hammams…) à travers une frise chronologique en 2D ou 3D. <br />
+Cliquez sur un site pour voir les photos et pour découvrir sa date de construction, son
+emplacement, son fondateur et l&#39;époque à laquelle il appartient.
           `;
           break;
         case "jeux":
           this.homeBlock.title = "Jeux";
-          this.homeBlock.description = "Allez-y pour jouer! Quatre types de jeux vous permettent de fixer vos connaissances tout en s'amusant. Ces types de jeux sont: les mots croisés, les puzzles, les pendus, les jeux de mémorisation.";
+          this.homeBlock.description = `
+          Allez-y pour jouer ! Quatre types de jeux vous permettent de fixer vos connaissances
+tout en vous amusant : les mots croisés, les puzzles, le pendu, les jeux de
+mémorisation.
+          `;
           break;
         case "evaluation":
           this.homeBlock.title = "Évaluation";
           this.homeBlock.description = `
-          Merci de bien vouloir consacrer quelques minutes à répondre à ces questionnaires. <br />  
-          Cliquez sur le lien pour accéder au sondage.
+          Merci de bien vouloir consacrer quelques minutes à répondre à ce questionnaire. <br />  
+          Cliquez sur Continuer pour accéder au sondage.
           `;
           break;
         case "projet":
           this.homeBlock.title = "Projet";
           this.homeBlock.description = `
-          Créer une vidéo animée sur PowToon pour présenter un site historique de votre choix.<br />
-          Cliquez sur le logo de PowToon pour regarder un tutoriel explicatif concernant l'usage de ce logiciel.
+          Créez une vidéo animée sur PowToon pour présenter un site historique de votre choix. <br />
+Cliquez sur le logo de PowToon pour regarder un tutoriel explicatif concernant
+l'usage de ce logiciel.
           `;
           break;
       }

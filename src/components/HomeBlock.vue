@@ -29,7 +29,7 @@
         data-toggle="modal"
         data-target="#jeu"
         style="background-color: #cb9323; color: white; padding: 20px; margin-top: 35px; cursor: pointer;"
-        @click="$emit('openIframe', 'https://www.survio.com/survey/d/P0H6P8A2I4Q3M5V4I')"
+        @click="$emit('openIframe', 'https://www.survio.com/survey/d/O4Y6A7X6V8F8T4K8P')"
       >Continuer</span>
     </div>
   </div>

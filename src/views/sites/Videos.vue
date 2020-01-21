@@ -38,10 +38,9 @@
           <div
             style="font-size: 18px; overflow-y: scroll; max-height: 100%; padding-left: 15px; text-align: left;"
           >
-            <u>Remarque</u> : Avant de commencer les activités, vous devez télécharger l'application "Edpuzzle" sur votre tablette.
-            <br />Allez à la découverte de la Citadelle de Tripoli (Le Château de Saint-Gilles) à travers trois vidéos au cours desquelles vous serez évalués.
+            Allez à la découverte de la Citadelle de Tripoli (Le Château de Saint-Gilles) à travers trois vidéos au cours desquelles vous serez évalués.
             <div
-              style="cursor: pointer" @click="iframeUrl = 'https://tinyurl.com/tj3dbpa'"
+              style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/JLB77U?teacher_id=5540252375580672'"
               data-toggle="modal"
               data-target="#jeu"
               class="edpuzzle-logo"
@@ -62,7 +61,7 @@
             <iframe
               frameborder="0"
               allowfullscreen
-              style="width: 100%; height: 100%; overflow-y: scroll;"
+              style="width: 100%; height: 120%; overflow-y: scroll;"
               src="https://tinyurl.com/tj3dbpa"
             ></iframe>
           </div>
