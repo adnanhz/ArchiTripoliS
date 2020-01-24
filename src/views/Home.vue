@@ -12,7 +12,8 @@
       <div
         style="display: flex; flex-direction: column; justify-content: space-between; width: 550px; margin-left: 15px;"
       >
-        <MenuItem style="cursor: pointer;" bgcolor="#ad9376" title="Tripoli au cours du temps" @click="openBlock('temps')" />
+        <MenuItem style="cursor: pointer;" bgcolor="#ad9376" title="Tripoli au cours du temps" 
+        @click="openBlock('temps')" />
         <MenuItem style="cursor: pointer;"
           bgcolor="#cb9323"
           title="Sites historiques"
@@ -103,7 +104,10 @@ export default {
       switch (ref) {
         case "temps":
           this.homeBlock.title = "Tripoli au cours du temps";
-          this.homeBlock.description = "Une vidéo animée présente les différents périodes et évènements historiques qu'a traversé Tripoli (la deuxième ville du Liban) et qui ont abouti à la création de son riche patrimoine architectural.";
+          this.homeBlock.description = `
+          Une vidéo animée présente les différents périodes et évènements 
+          historiques qu'a traversé Tripoli (la deuxième ville du Liban) et qui ont abouti à la création de son 
+          riche patrimoine architectural.<br/><br/><i>En cours de préparation.</i>`;
           break;
         case "sites-historiques":
           this.homeBlock.title = "Sites historiques";
@@ -157,7 +161,20 @@ l'usage de ce logiciel.
 .home {
   background-image: url("~@/assets/background.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   min-height: 100vh;
+}
+
+.modal-dialog {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  width: 100vw;
+  height: 99%;
+  border-radius: 0;
 }
 </style>
