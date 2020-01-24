@@ -34,11 +34,11 @@
         <div v-html="homeBlock.description" style="font-size: 22px; overflow-y: scroll; max-height: 100%; text-align: left; padding-left: 15px;" ></div>
       </HomeBlock>
     </div>
-    <div class="modal fade" id="jeu" tabindex="-1">
+    <div class="modal fade" id="jeu" tabindex="-1" data-backdrop="static"  data-keyboard="false">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="btn btn-primary" @click="$router.back()" style="cursor: pointer;">
+            <button type="button" class="btn btn-primary" @click="$router.back(); iframeUrl=''" style="cursor: pointer;">
               Retour
             </button>
           </div>

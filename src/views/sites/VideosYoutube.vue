@@ -48,11 +48,11 @@
       </div>                 
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="jeu" tabindex="-1">
+    <div class="modal fade" id="jeu" tabindex="-1" data-backdrop="static" data-keyboard="false">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="btn btn-primary" @click="$router.back()" style="cursor: pointer;">
+            <button type="button" class="btn btn-primary" @click="$router.back(); iframeUrl='';" style="cursor: pointer;">
               Retour
             </button>
           </div>
