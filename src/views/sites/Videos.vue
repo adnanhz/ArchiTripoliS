@@ -61,8 +61,8 @@
             <iframe
               frameborder="0"
               allowfullscreen
-              style="width: 100%; height: 120%; overflow-y: scroll;"
-              src="https://tinyurl.com/tj3dbpa"
+              style="width: 100%; height: 100%;"
+              :src="iframeUrl"
             ></iframe>
           </div>
         </div>
@@ -76,6 +76,7 @@ import HomeBlock from "@/components/HomeBlock";
 export default {
   data() {
     return {
+      iframeUrl: '',
       homeBlock: {
         show: false,
         title: "",
