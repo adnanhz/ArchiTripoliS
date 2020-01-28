@@ -12,46 +12,86 @@
       <div
         style="display: flex; flex-direction: column; justify-content: space-between; width: 550px; margin-left: 15px;"
       >
-        <MenuItem style="cursor: pointer; font-size: 20px;" bgcolor="#ad9376" title="Tripoli au cours du temps" 
-         class="menuItem" 
-        @click="openBlock('temps')" />
-        <MenuItem style="cursor: pointer; font-size: 20px;"
+        <MenuItem
+          style="cursor: pointer; font-size: 20px;"
+          bgcolor="#ad9376"
+          title="Tripoli au cours du temps"
+          class="menuItem"
+          @click="openBlock('temps')"
+        />
+        <MenuItem
+          style="cursor: pointer; font-size: 20px;"
           bgcolor="#cb9323"
           title="Sites historiques"
-           class="menuItem" 
+          class="menuItem"
           @click="openBlock('sites-historiques')"
         />
-        <MenuItem style="cursor: pointer; font-size: 20px;"
+        <MenuItem
+          style="cursor: pointer; font-size: 20px;"
           bgcolor="#926d33"
           title="Frise chronologique"
-           class="menuItem" 
+          class="menuItem"
           @click="openBlock('frise-chronologique')"
         />
-        <MenuItem class="menuItem" style="cursor: pointer; font-size: 20px;" bgcolor="#3f5756" title="Jeux" @click="openBlock('jeux')" />
-        <MenuItem class="menuItem"  style="cursor: pointer; font-size: 20px;" bgcolor="#576359" title="Projet" @click="openBlock('projet')" />
-        <MenuItem class="menuItem"  style="cursor: pointer; font-size: 20px;" bgcolor="#172639" title="Évalutation" @click="openBlock('evaluation')" />
+        <MenuItem
+          class="menuItem"
+          style="cursor: pointer; font-size: 20px;"
+          bgcolor="#3f5756"
+          title="Jeux"
+          @click="openBlock('jeux')"
+        />
+        <MenuItem
+          class="menuItem"
+          style="cursor: pointer; font-size: 20px;"
+          bgcolor="#576359"
+          title="Projet"
+          @click="openBlock('projet')"
+        />
+        <MenuItem
+          class="menuItem"
+          style="cursor: pointer; font-size: 20px;"
+          bgcolor="#172639"
+          title="Évalutation"
+          @click="openBlock('evaluation')"
+        />
       </div>
     </div>
     <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
-      <HomeBlock v-if="homeBlock.show" :title="homeBlock.title" @continue="goToPage"
-      @openIframe="(url) => iframeUrl = url">
-        <div v-html="homeBlock.description" style="font-size: 22px; overflow-y: scroll; max-height: 100%; text-align: left; padding-left: 15px;" ></div>
+      <HomeBlock
+        v-if="homeBlock.show"
+        :title="homeBlock.title"
+        @continue="goToPage"
+        @openIframe="(url) => iframeUrl = url"
+      >
+        <div
+          v-html="homeBlock.description"
+          style="font-size: 22px; overflow-y: scroll; max-height: 100%; text-align: left; padding-left: 15px;"
+        ></div>
       </HomeBlock>
     </div>
-    <div style="background-color: rgba(0, 0, 0, 0.7); 
+    <div
+      style="background-color: rgba(0, 0, 0, 0.7); 
                 color: white; position: fixed; top: 0px; right: 0px;
-                padding: 5px; font-size: 19px;">
-      <span>Contactez-nous: 
-        <a style="text-decoration: underline; color: white;" 
-        href="mailto:archi.liban@gmail.com">archi.liban@gmail.com</a></span>
-    </div>   
-    <div class="modal fade" id="jeu" tabindex="-1" data-backdrop="static"  data-keyboard="false">
+                padding: 5px; font-size: 19px;"
+    >
+      <span>
+        Contactez-nous:
+        <a
+          style="text-decoration: underline; color: white;"
+          href="mailto:archi.liban@gmail.com"
+        >archi.liban@gmail.com</a>
+      </span>
+    </div>
+    <div class="modal fade" id="jeu" tabindex="-1" data-backdrop="static" data-keyboard="false">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="btn btn-primary" @click="$router.back(); iframeUrl=''" style="cursor: pointer;">
-              Retour
-            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              @click="$router.back(); iframeUrl=''"
+              style="cursor: pointer;"
+            >Retour</button>
           </div>
           <div class="modal-body" style="height: 80vh;">
             <iframe
@@ -64,7 +104,68 @@
           </div>
         </div>
       </div>
-    </div> 
+    </div>
+    <div
+      v-if="showWelcome"
+      class="modal fade show d-block"
+      id="accueil"
+      tabindex="-1"
+      data-backdrop="static"
+      data-keyboard="false"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header"></div>
+          <div
+            class="modal-body"
+            style="height: 80vh; width: 500px; margin: 0 auto; text-align: left;"
+          >
+            <h1>ArchiTripoliS</h1>
+            <div style=" overflow-y: auto; height: 80%;">
+              <p>
+                Souhaitez-vous connaitre tout ce qui touche au patrimoine architectural de
+                Tripoli-Liban, aux différentes périodes qui ont traversé cette ville ?
+              </p>
+              <p>
+                Aimez- vous regarder des documentaires historiques et lire des livres
+                interactifs sur les sites historiques de Tripoli ? Voulez-vous tester en jouant
+                vos connaissances sur Tripoli ? Notre site web "ArchiTripoliS" vous propose un
+                nombre de présentations historiques passionnantes répondant aux intérêts et
+                aux besoins des jeunes en matière d’histoire et de patrimoine.
+              </p>
+              <p>
+                "ArchiTripoliS" est un site web éducatif qui permet de familiariser
+                les apprenants avec la technologie tout en l’intégrant dans l’enseignement de
+                l’histoire à l’école.
+              </p>
+              <p>
+                Elle permet aussi aux apprenants du cycle complémentaire de découvrir
+                le patrimoine architectural de ̋ Tripoli ̋ qui fait partie de leur entourage et
+                par la suite de renforcer les liens entre les Tripolitains et leur ville natale.
+                En effet, Tripoli est riche d’un grand nombre de sites historiques datant de diverses
+                époques.
+              </p>
+              <p>
+                Qu’allez-vous découvrir sur ̋ArchiTripoliS ̋ ?
+                <br />- L’histoire de Tripoli
+                <br />- La citadelle de Tripoli « Le château de Saint-Gilles »
+                <br />- La Grande Mosquée al-Mansouri
+                <br />- Hammam Ezzedine
+                <br />- Beaucoup d’autres sites historiques (Caravansérails خانات , Mosquées مساجد ,
+                Eglises كنائس , Ecoles Coraniques مدارس قرآنية , Bains Publics حمامات ,
+                Tours défensifs أبراج دفاعية , Khankah خانقة… (.
+                <br />N’hésitez pas à découvrir ce site web "ArchiTripoliS".
+              </p>
+            </div>
+            <div>
+              <button class='btn btn-primary btn-block' style="margin-top: 10px;"
+                      @click="showWelcome = false">Démarrer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div></div>
   </div>
 </template>
 
@@ -81,7 +182,8 @@ export default {
         title: "",
         description: ""
       },
-      iframeUrl: ""
+      iframeUrl: "",
+      showWelcome: true
     };
   },
   components: {
@@ -122,8 +224,7 @@ export default {
           break;
         case "sites-historiques":
           this.homeBlock.title = "Sites historiques";
-          this.homeBlock.description = 
-          `<div style="margin-left: 15px;">Cette partie présente trois sites historiques:</div>
+          this.homeBlock.description = `<div style="margin-left: 15px;">Cette partie présente trois sites historiques:</div>
           <ul>
           <li>Trois vidéos présentent la citadelle de Tripoli (le château de Saint-Gilles)</li>
           <li>Un livre interactif présente le hammam Ezzedine.</li>
