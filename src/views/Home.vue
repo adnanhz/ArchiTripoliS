@@ -12,24 +12,24 @@
       <div
         style="display: flex; flex-direction: column; justify-content: space-between; width: 550px; margin-left: 15px;"
       >
-        <MenuItem style="cursor: pointer;" bgcolor="#ad9376" title="Tripoli au cours du temps" 
+        <MenuItem style="cursor: pointer; font-size: 20px;" bgcolor="#ad9376" title="Tripoli au cours du temps" 
          class="menuItem" 
         @click="openBlock('temps')" />
-        <MenuItem style="cursor: pointer;"
+        <MenuItem style="cursor: pointer; font-size: 20px;"
           bgcolor="#cb9323"
           title="Sites historiques"
            class="menuItem" 
           @click="openBlock('sites-historiques')"
         />
-        <MenuItem style="cursor: pointer;"
+        <MenuItem style="cursor: pointer; font-size: 20px;"
           bgcolor="#926d33"
           title="Frise chronologique"
            class="menuItem" 
           @click="openBlock('frise-chronologique')"
         />
-        <MenuItem class="menuItem" style="cursor: pointer;" bgcolor="#3f5756" title="Jeux" @click="openBlock('jeux')" />
-        <MenuItem class="menuItem"  style="cursor: pointer;" bgcolor="#576359" title="Projet" @click="openBlock('projet')" />
-        <MenuItem class="menuItem"  style="cursor: pointer;" bgcolor="#172639" title="Évalutation" @click="openBlock('evaluation')" />
+        <MenuItem class="menuItem" style="cursor: pointer; font-size: 20px;" bgcolor="#3f5756" title="Jeux" @click="openBlock('jeux')" />
+        <MenuItem class="menuItem"  style="cursor: pointer; font-size: 20px;" bgcolor="#576359" title="Projet" @click="openBlock('projet')" />
+        <MenuItem class="menuItem"  style="cursor: pointer; font-size: 20px;" bgcolor="#172639" title="Évalutation" @click="openBlock('evaluation')" />
       </div>
     </div>
     <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
