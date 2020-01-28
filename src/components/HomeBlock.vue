@@ -21,7 +21,7 @@
       <span
         v-if="title !== 'Évaluation'"
         style="background-color: #926d33; color: white; padding: 20px; 
-              margin-top: 35px; cursor: pointer;"
+              margin-top: 35px; cursor: pointer; font-size: 20px;"
         @click="$emit('continue', title)"
         
       >Continuer</span>
@@ -29,7 +29,8 @@
         v-else
         data-toggle="modal"
         data-target="#jeu"
-        style="background-color: #926d33; color: white; padding: 20px; margin-top: 35px; cursor: pointer;"
+        style="background-color: #926d33; color: white; padding: 20px; margin-top: 35px; 
+        cursor: pointer;  font-size: 20px;"
         @click="$emit('openIframe', 'https://www.survio.com/survey/d/O4Y6A7X6V8F8T4K8P')"
       >Continuer</span>
     </div>

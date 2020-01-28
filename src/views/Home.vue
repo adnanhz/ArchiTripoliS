@@ -4,7 +4,7 @@
       style="width: 50%; display: flex; justify-content: center; 
       flex-direction: column; align-items: center; padding-top: 20px; margin-left: 15px;"
     >
-      <div>
+      <div style="position: relative; top: -15px;">
         <div style="background-color: rgba(255,255,255,0.7);">
           <img style="width: 100%;" src="../assets/stone.png" />
         </div>
