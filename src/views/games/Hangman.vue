@@ -5,13 +5,13 @@
     >
       <div style="width: 100%; display: flex; justify-content: space-between;">
         <span
-          style="width: 27%; height: 100%; background-color: white; 
+          style="width: 10%; height: 94px; background-color: white; 
                     padding: 15px; margin-top: 10px; border: 6px solid #f5f5f5;
-                    font-size: 40px; cursor: pointer;"
+                    font-size: 40px;cursor: pointer;"
           @click="$router.back()"
-        >Retour</span>
+        >🡄</span>
         <MenuItem
-          style="margin-bottom: 150px; width: 70%; font-size: 40px;"
+          style="margin-bottom: 150px; width: 89%; font-size: 40px;"
           bgcolor="#3f5756"
           title="Pendu"
         />
@@ -62,12 +62,13 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="btn btn-primary" @click="$router.back()" style="cursor: pointer;">
+            <button type="button" class="btn btn-primary" @click="$router.back(); iframeUrl = ''" style="cursor: pointer;">
               Retour
             </button>
           </div>
           <div class="modal-body">
             <iframe
+              v-if="iframeUrl.length > 0"
               style="width: 100%; overflow-y: scroll; height: 100%;"
               :src="iframeUrl"
             ></iframe>
@@ -139,7 +140,7 @@ export default {
 
 .modal-content {
   width: 100vw;
-  height: 99%;
+  height: 100%;
   border-radius: 0;
 }
 </style>

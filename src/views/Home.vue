@@ -13,20 +13,23 @@
         style="display: flex; flex-direction: column; justify-content: space-between; width: 550px; margin-left: 15px;"
       >
         <MenuItem style="cursor: pointer;" bgcolor="#ad9376" title="Tripoli au cours du temps" 
+         class="menuItem" 
         @click="openBlock('temps')" />
         <MenuItem style="cursor: pointer;"
           bgcolor="#cb9323"
           title="Sites historiques"
+           class="menuItem" 
           @click="openBlock('sites-historiques')"
         />
         <MenuItem style="cursor: pointer;"
           bgcolor="#926d33"
           title="Frise chronologique"
+           class="menuItem" 
           @click="openBlock('frise-chronologique')"
         />
-        <MenuItem style="cursor: pointer;" bgcolor="#3f5756" title="Jeux" @click="openBlock('jeux')" />
-        <MenuItem style="cursor: pointer;" bgcolor="#576359" title="Projet" @click="openBlock('projet')" />
-        <MenuItem style="cursor: pointer;" bgcolor="#172639" title="Évalutation" @click="openBlock('evaluation')" />
+        <MenuItem class="menuItem" style="cursor: pointer;" bgcolor="#3f5756" title="Jeux" @click="openBlock('jeux')" />
+        <MenuItem class="menuItem"  style="cursor: pointer;" bgcolor="#576359" title="Projet" @click="openBlock('projet')" />
+        <MenuItem class="menuItem"  style="cursor: pointer;" bgcolor="#172639" title="Évalutation" @click="openBlock('evaluation')" />
       </div>
     </div>
     <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
@@ -35,6 +38,13 @@
         <div v-html="homeBlock.description" style="font-size: 22px; overflow-y: scroll; max-height: 100%; text-align: left; padding-left: 15px;" ></div>
       </HomeBlock>
     </div>
+    <div style="background-color: rgba(0, 0, 0, 0.7); 
+                color: white; position: fixed; top: 0px; right: 0px;
+                padding: 5px; font-size: 22px;">
+      <span>Contactez-nous: 
+        <a style="text-decoration: underline; color: white;" 
+        href="mailto:archi.liban@gmail.com">archi.liban@gmail.com</a></span>
+    </div>   
     <div class="modal fade" id="jeu" tabindex="-1" data-backdrop="static"  data-keyboard="false">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -45,6 +55,7 @@
           </div>
           <div class="modal-body" style="height: 80vh;">
             <iframe
+              v-if="iframeUrl.length > 0"
               frameborder="0"
               allowfullscreen
               style="width: 100%; height: 100%; overflow-y: scroll;"
@@ -53,7 +64,7 @@
           </div>
         </div>
       </div>
-    </div>    
+    </div> 
   </div>
 </template>
 
@@ -174,7 +185,11 @@ l'usage de ce logiciel.
 
 .modal-content {
   width: 100vw;
-  height: 99%;
+  height: 100%;
   border-radius: 0;
+}
+
+.menuItem:active {
+  zoom: 1.1;
 }
 </style>
