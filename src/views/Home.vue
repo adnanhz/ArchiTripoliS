@@ -40,7 +40,7 @@
     </div>
     <div style="background-color: rgba(0, 0, 0, 0.7); 
                 color: white; position: fixed; top: 0px; right: 0px;
-                padding: 5px; font-size: 22px;">
+                padding: 5px; font-size: 19px;">
       <span>Contactez-nous: 
         <a style="text-decoration: underline; color: white;" 
         href="mailto:archi.liban@gmail.com">archi.liban@gmail.com</a></span>
