@@ -47,10 +47,10 @@ font-family: "limelight";
 src: url("~@/assets/Limelight.ttf");
 }
 p {
-  font-family: "limelight";
+  font-family: "Arial black";
 }
 
 span {
-  font-family: "limelight";
+  font-family: "Arial black";
 }
 </style>
