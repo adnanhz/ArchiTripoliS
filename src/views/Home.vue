@@ -1,8 +1,8 @@
 <template>
-  <div class="home container-fluid" style="display: flex;">
+  <div class="home container-fluid" style="display: flex; display: -webkit-flex;;">
     <div
-      style="width: 50%; display: flex; justify-content: center; 
-      flex-direction: column; align-items: center; padding-top: 20px; margin-left: 15px;"
+      style="width: 50%; display: flex; display: -webkit-flex;; justify-content: center; -webkit-justify-content: center; 
+      flex-direction: column; align-items: center; -webkit-align-items: center; padding-top: 20px; margin-left: 15px;"
     >
       <div style="position: relative; top: -15px;">
         <div style="background-color: rgba(255,255,255,0.7);">
@@ -10,7 +10,7 @@
         </div>
       </div>
       <div
-        style="display: flex; flex-direction: column; justify-content: space-between; width: 550px; margin-left: 15px;"
+        style="display: flex; display: -webkit-flex;; flex-direction: column; justify-content: space-between; width: 550px; margin-left: 15px;"
       >
         <MenuItem
           style="cursor: pointer; font-size: 20px;"
@@ -56,7 +56,7 @@
         />
       </div>
     </div>
-    <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
+    <div style="width: 50%; display: flex; display: -webkit-flex;; justify-content: center; -webkit-justify-content: center; align-items: center; -webkit-align-items: center;">
       <HomeBlock
         v-if="homeBlock.show"
         :title="homeBlock.title"
@@ -118,7 +118,7 @@
           <div class="modal-header"></div>
           <div
             class="modal-body"
-            style="height: 80vh; width: 500px; margin: 0 auto; text-align: left;"
+            style="height: 80vh; width: 500px; margin: 0 auto; text-align: left; height: 100%; overflow-y:scroll"
           >
             <h1>ArchiTripoliS</h1>
             <div style=" overflow-y: auto; height: 80%;">

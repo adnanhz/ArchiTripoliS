@@ -1,9 +1,9 @@
 <template>
   <div class="crosswords container-fluid">
     <div
-      style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;"
+      style="display: flex; display: -webkit-flex;; flex-wrap: wrap; justify-content: space-around; align-items: center; -webkit-align-items: center;"
     >
-      <div style="width: 100%; display: flex; height: 150px; justify-content: space-between;">
+      <div style="width: 100%; display: flex; display: -webkit-flex;; height: 150px; justify-content: space-between;">
         <span
           style="width: 10%; height: 94px; background-color: white; 
                     padding: 15px; margin-top: 10px; border: 6px solid #f5f5f5;
@@ -16,7 +16,7 @@
           title="Sites historiques"
         />
       </div>
-      <div style="width: 50%; display: flex; align-items: flex-start; padding-left: 130px; flex-direction: column; justify-content: center;">
+      <div style="width: 50%; display: flex; display: -webkit-flex;; align-items: flex-start; padding-left: 130px; flex-direction: column; justify-content: center; -webkit-justify-content: center;">
         <div
           class="game-category ebook"   
           data-toggle="modal"
@@ -123,9 +123,9 @@ livres interactifs au cours desquels vos connaissances seront évaluées.`;
   background-color: rgba(0, 0, 0, 0.4);
   width: 150px;
   height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; display: -webkit-flex;;
+  align-items: center; -webkit-align-items: center;
+  justify-content: center; -webkit-justify-content: center;
   font-weight: bold;
   font-size: 86px;
 }

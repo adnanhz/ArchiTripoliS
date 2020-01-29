@@ -1,8 +1,8 @@
 <template>
   <div
-    style="background-color: #f5f5f5; opacity: 0.95; border: 2px solid #926d33; border-radius: 2px; height: 500px; width: 80%;"
+    style="background-color: #f5f5f5; opacity: 0.95; border: 2px solid #926d33; border-radius: 2px; height: 480px; width: 80%;"
   >
-    <div style="height: 100px;">
+    <div style="height: 80px;">
       <span style="font-size: 30px; width: 100%; color: #926d33;">{{title}}</span>
     </div>
     <div style="height: 320px;">

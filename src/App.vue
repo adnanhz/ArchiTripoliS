@@ -3,12 +3,12 @@
     <router-view/>
   </div>
   <div v-else-if="$vssHeight > $vssWidth" 
-    style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+    style="display: flex; display: -webkit-flex;; flex-direction: column; justify-content: center; -webkit-justify-content: center; align-items: center; -webkit-align-items: center; height: 100%;">
     <h2>Veuillez retourner votre écran.
     </h2>
     <img src="~@/assets/rotate.png" />
   </div>  
-  <div v-else style="display: flex; justify-content: center; align-items: center; height: 100%;">
+  <div v-else style="display: flex; display: -webkit-flex;; justify-content: center; -webkit-justify-content: center; align-items: center; -webkit-align-items: center; height: 100%;">
     <h2>Votre écran est trop petit pour bien afficher le site.</h2>
   </div>
 </template>

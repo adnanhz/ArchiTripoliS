@@ -1,9 +1,9 @@
 <template>
   <div class="crosswords container-fluid">
     <div
-      style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;"
+      style="display: flex; display: -webkit-flex;; flex-wrap: wrap; justify-content: space-around; align-items: center; -webkit-align-items: center;"
     >
-    <div style="width: 100%; display: flex; justify-content: space-between;">
+    <div style="width: 100%; display: flex; display: -webkit-flex;; justify-content: space-between;">
         <span
           style="width: 10%; height: 94px; background-color: white; 
                     padding: 15px; margin-top: 10px; border: 6px solid #f5f5f5;
@@ -23,12 +23,13 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content" style="height: 100%">
       <div class="modal-header">
-            <button type="button" class="btn btn-primary" @click="$router.back()" style="cursor: pointer;">
+          <button type="button" class="btn btn-primary" @click="$router.back()" 
+          style="cursor: pointer; float: left;">
               Retour
-            </button>
+          </button>
       </div>
-      <div class="modal-body">
-        <iframe style="width: 100%; overflow-y: scroll; height: 100%;" src="https://www.bookwidgets.com/play/MK4MH9">
+      <div class="modal-body" style="height: 100%;">
+        <iframe style="width: 100%; overflow-y: scroll; height: 99%;" src="https://www.bookwidgets.com/play/MK4MH9">
         </iframe>   
       </div>
     </div>
@@ -78,9 +79,10 @@ export default {
   background-color: rgba(0, 0, 0, 0.4);
   width: 200px;
   height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; 
+  display: -webkit-flex;
+  align-items: center; -webkit-align-items: center;
+  justify-content: center; -webkit-justify-content: center;
   font-weight: bold;
   font-size: 86px;
 }

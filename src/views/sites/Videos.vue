@@ -1,9 +1,9 @@
 <template>
   <div class="crosswords container-fluid">
     <div
-      style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;"
+      style="display: flex; display: -webkit-flex;; flex-wrap: wrap; justify-content: space-around; align-items: center; -webkit-align-items: center;"
     >
-      <div style="width: 100%; display: flex; height: 150px; justify-content: space-between;">
+      <div style="width: 100%; display: flex; display: -webkit-flex;; height: 150px; justify-content: space-between;">
         <span
           style="width: 10%; height: 94px; background-color: white; 
                     padding: 15px; margin-top: 10px; border: 6px solid #f5f5f5;
@@ -17,9 +17,9 @@
         />
       </div>
       <div
-        style="width: 50%; display: flex; flex-direction: column; align-items: flex-start; padding-left: 130px; justify-content: center;"
+        style="width: 50%; display: flex; display: -webkit-flex;; flex-direction: column; align-items: flex-start; padding-left: 130px; justify-content: center; -webkit-justify-content: center;"
       >
-        <div style="display: flex; flex-direction: column; color: black; padding-left: 25px;">
+        <div style="display: flex; display: -webkit-flex;; flex-direction: column; color: black; padding-left: 25px;">
           <div
             class="game-category video"
             @click="$router.push('/sites-historiques/videos/youtube')"
@@ -27,7 +27,7 @@
           <h2>Vidéos</h2>
         </div>
 
-        <div style="display: flex; flex-direction: column; align-items: center; color: black;">
+        <div style="display: flex; display: -webkit-flex;; flex-direction: column; align-items: center; -webkit-align-items: center; color: black;">
           <div class="game-category video" @click="openBlock('videos-quiz')"></div>
           <h2>Vidéos + Quiz</h2>
         </div>
@@ -57,7 +57,7 @@
               Retour
             </button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body" style="height: 100%;">
             <iframe
               frameborder="0"
               allowfullscreen
@@ -152,9 +152,9 @@ export default {
   background-color: rgba(0, 0, 0, 0.4);
   width: 150px;
   height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; display: -webkit-flex;;
+  align-items: center; -webkit-align-items: center;
+  justify-content: center; -webkit-justify-content: center;
   font-weight: bold;
   font-size: 86px;
 }
