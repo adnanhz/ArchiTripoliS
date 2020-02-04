@@ -9,7 +9,7 @@
                     padding: 15px; margin-top: 10px; border: 6px solid #f5f5f5;
                     font-size: 40px;cursor: pointer; z-index: 9999"
           @click="$router.back()"
-        >🡄</span>
+        ><i class="icon ion-md-arrow-round-back"></i></span>
         <MenuItem
           style="padding: 10px; margin-top: 0px; margin-bottom: 150px; width: 89%; font-size: 30px; z-index: 99999"
           bgcolor="#3f5756"
