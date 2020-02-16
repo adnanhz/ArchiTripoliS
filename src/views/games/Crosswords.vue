@@ -29,7 +29,8 @@
           </button>
       </div>
       <div class="modal-body" style="height: 100%;">
-        <iframe style="width: 100%; overflow-y: scroll; height: 99%;" src="https://www.bookwidgets.com/play/MK4MH9">
+        <iframe style="width: 100%; overflow-y: scroll; height: 99%;" 
+        src="https://www.bookwidgets.com/play/MK4MH9">
         </iframe>   
       </div>
     </div>

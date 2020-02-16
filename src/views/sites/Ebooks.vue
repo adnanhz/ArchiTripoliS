@@ -3,7 +3,7 @@
     <div
       style="display: flex; display: -webkit-flex;; flex-wrap: wrap; justify-content: space-around; align-items: center; -webkit-align-items: center;"
     >
-      <div style="width: 100%; display: flex; display: -webkit-flex;; justify-content: space-between;">
+      <div style="width: 100%; height: 125px; display: flex; display: -webkit-flex;; justify-content: space-between;">
         <span
           style="width: 10%; height: 94px; background-color: white; 
                     padding: 15px; margin-top: 10px; border: 6px solid #f5f5f5;
@@ -105,13 +105,15 @@ export default {
   background-repeat: no-repeat;
   background-size: 100%;
   color: white;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
+  margin-bottom: -30px;
+  padding-bottom: 200px;
 }
 .game-category-inner {
   background-color: rgba(0, 0, 0, 0);
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   display: flex; display: -webkit-flex;;
   align-items: center; -webkit-align-items: center;
   justify-content: center; -webkit-justify-content: center;

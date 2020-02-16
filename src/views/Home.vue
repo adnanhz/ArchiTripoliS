@@ -82,7 +82,8 @@
         >archi.liban@gmail.com</a>
       </span>
     </div>
-    <div class="modal fade" id="jeu" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="modal fade" id="jeu" tabindex="-1" data-backdrop="static"
+    data-keyboard="false">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -106,7 +107,7 @@
       </div>
     </div>
     <div
-      v-if="showWelcome"
+      v-if="!$route.query.noWelcome && showWelcome"
       class="modal fade show d-block"
       id="accueil"
       tabindex="-1"
@@ -114,11 +115,12 @@
       data-keyboard="false"
     >
       <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+        <div class="modal-content apropos">
           <div class="modal-header"></div>
           <div
             class="modal-body"
-            style="height: 80vh; width: 500px; margin: 0 auto; text-align: left; height: 100%; overflow-y:scroll"
+            style="height: 80vh; width: 500px; margin: 0 auto; text-align: left; 
+            height: 100%; overflow-y:scroll; background-color: rgba(255,255,255,0.8)"
           >
             <h1>ArchiTripoliS</h1>
             <div style=" overflow-y: auto; height: 80%;">
@@ -159,7 +161,7 @@
             </div>
             <div>
               <button class='btn btn-primary btn-block' style="margin-top: 10px;"
-                      @click="showWelcome = false">Démarrer</button>
+                      @click="showWelcome = false; $router.push('?noWelcome=1')">Démarrer</button>
             </div>
           </div>
         </div>
@@ -292,5 +294,9 @@ l'usage de ce logiciel.
 
 .menuItem:active {
   zoom: 1.1;
+}
+
+.apropos {
+  background-image: url('~@/assets/background.jpg');
 }
 </style>

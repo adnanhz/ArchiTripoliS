@@ -1,0 +1,11 @@
+{
+    "android": {
+        "release": {
+            "keystore": "../../../mykeystore/CordovaRelease.keystore",
+            "storePassword": "architripolis",
+            "alias": "CordovaRelease",
+            "password": "architripolis",
+            "keystoreType": ""
+        }
+    }
+}

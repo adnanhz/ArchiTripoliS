@@ -57,10 +57,8 @@
             </button>
           </div>
           <div class="modal-body" style="height: 100%;">
-            <iframe
-            v-if="iframeUrl.length > 0"
-            frameborder="0" allowfullscreen
-              style="width: 100%; height: 100%; overflow-y: scroll;"
+            <iframe v-if="iframeUrl.length > 0"
+              width="590" height="475"
               :src="iframeUrl"
             ></iframe>
           </div>
