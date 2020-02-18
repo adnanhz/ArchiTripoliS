@@ -223,7 +223,7 @@ export default {
           this.homeBlock.description = `
           Une vidéo animée présente les différents périodes et évènements 
           historiques qu'a traversé Tripoli (la deuxième ville du Liban) et qui ont abouti à la création de son 
-          riche patrimoine architectural.<br/><br/><i>En cours de préparation.</i>`;
+          riche patrimoine architectural.<br/>`;
           break;
         case "sites-historiques":
           this.homeBlock.title = "Sites historiques";
