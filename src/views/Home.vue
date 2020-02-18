@@ -196,7 +196,8 @@ export default {
     goToPage(title) {
       switch (title) {
         case "Tripoli au cours du temps":
-          this.$router.push("/temps");
+          //this.$router.push("/temps");
+          this.iframeUrl = "https://www.powtoon.com/embed/eY2JmFSF2rD/"
           break;
         case "Sites historiques":
           this.$router.push("/sites-historiques");
