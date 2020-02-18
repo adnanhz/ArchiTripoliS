@@ -17,7 +17,7 @@
         />
       </div>
     </div>
-    <div style="margin-top: 20px;" v-if="title !== 'Projet' && title !== 'Tripoli au cours du temps'">
+    <div style="margin-top: 20px;" v-if="title !== 'Projet'">
       <span
         v-if="title !== 'Évaluation'"
         style="background-color: #926d33; color: white; padding: 20px; 
