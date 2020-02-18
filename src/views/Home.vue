@@ -141,7 +141,7 @@
                 l’histoire à l’école.
               </p>
               <p>
-                Elle permet aussi aux apprenants du cycle complémentaire de découvrir
+                Il permet aussi aux apprenants du cycle complémentaire de découvrir
                 le patrimoine architectural de ̋ Tripoli ̋ qui fait partie de leur entourage et
                 par la suite de renforcer les liens entre les Tripolitains et leur ville natale.
                 En effet, Tripoli est riche d’un grand nombre de sites historiques datant de diverses
