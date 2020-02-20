@@ -58,7 +58,7 @@
           </div>
           <div class="modal-body" style="height: 100%;">
             <iframe v-if="iframeUrl.length > 0"
-              width="600" height="485"
+              width="90%" height="90%"
               :src="iframeUrl"
             ></iframe>
           </div>
