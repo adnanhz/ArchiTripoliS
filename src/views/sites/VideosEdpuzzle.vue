@@ -23,7 +23,7 @@
         class="game-category video"
         data-toggle="modal"
         data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/assignments/5e1004316f573740a6905fdc/watch'"
+        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1004316f573740a6905fdc/watch'"
       >
         <div class="game-category-inner"></div>
         <h2 style="color: black;">Code<br/>ezahise</h2>
@@ -32,7 +32,7 @@
         class="game-category video"
         data-toggle="modal"
         data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/assignments/5e4d6f63bdbd4940ae030170/watch'"
+        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e4d6f63bdbd4940ae030170/watch'"
       >
         <div class="game-category-inner"></div>
         <h2 style="color: black;">Code<br/>lolohuc</h2>
@@ -41,7 +41,7 @@
         class="game-category video"
         data-toggle="modal"
         data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/assignments/5e10086b5171d840ad6407e9/watch'"
+        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e10086b5171d840ad6407e9/watch'"
       >
         <div class="game-category-inner"></div>
         <h2 style="color: black;">Code<br/>bedhiwu</h2>
