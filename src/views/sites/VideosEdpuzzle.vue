@@ -23,28 +23,28 @@
         class="game-category video"
         data-toggle="modal"
         data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1a719f8047cc413c46f67e/watch'"
+        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/assignments/5e1004316f573740a6905fdc/watch'"
       >
         <div class="game-category-inner"></div>
-        <h2 style="color: black;">Code<br/>vedfavj</h2>
+        <h2 style="color: black;">Code<br/>ezahise</h2>
       </div>
       <div
         class="game-category video"
         data-toggle="modal"
         data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1a718175f58e413552c8a6/watch'"
+        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/assignments/5e4d6f63bdbd4940ae030170/watch'"
       >
         <div class="game-category-inner"></div>
-        <h2 style="color: black;">Code<br/>hubolge</h2>
+        <h2 style="color: black;">Code<br/>lolohuc</h2>
       </div>
       <div
         class="game-category video"
         data-toggle="modal"
         data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1236c589522e40ac333013/watch'"
+        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/assignments/5e10086b5171d840ad6407e9/watch'"
       >
         <div class="game-category-inner"></div>
-        <h2 style="color: black;">Code<br/>tusetof</h2>
+        <h2 style="color: black;">Code<br/>bedhiwu</h2>
       </div>                 
     </div>
     <!-- Modal -->
@@ -58,7 +58,7 @@
           </div>
           <div class="modal-body" style="height: 100%;">
             <iframe v-if="iframeUrl.length > 0"
-              width="590" height="475"
+              width="600" height="485"
               :src="iframeUrl"
             ></iframe>
           </div>
