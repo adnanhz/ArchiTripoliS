@@ -1,15 +1,21 @@
 <template>
   <div>
-            <iframe style="width: 99vw; overflow-y: scroll; height: 85vh;" 
-        src="https://www.bookwidgets.com/play/MK4MH9">
-        </iframe>   
+    <button
+      type="button"
+      class="btn btn-primary"
+      @click="$router.back()"
+      style="cursor: pointer; float: left; margin-top: 10px; margin-bottom: 10px;"
+    >Retour</button>
+    <iframe
+      style="width: 100vw; overflow-y: scroll; height: 99vh;"
+      src="https://www.bookwidgets.com/play/MK4MH9"
+    ></iframe>
   </div>
 </template>
 <script>
 export default {
-    components: {
-    }
-}
+  components: {}
+};
 </script>
 <style scoped>
 .crosswords {
@@ -45,10 +51,12 @@ export default {
   background-color: rgba(0, 0, 0, 0.4);
   width: 200px;
   height: 200px;
-  display: flex; 
+  display: flex;
   display: -webkit-flex;
-  align-items: center; -webkit-align-items: center;
-  justify-content: center; -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
   font-weight: bold;
   font-size: 86px;
 }
@@ -61,8 +69,8 @@ export default {
 }
 
 .modal-content {
-width: 100vw;
-height: 90%;
+  width: 100vw;
+  height: 90%;
   border-radius: 0;
 }
 </style>
