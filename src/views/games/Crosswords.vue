@@ -21,7 +21,7 @@
 <!-- Modal -->
 <div class="modal fade" id="jeu" tabindex="-1">
   <div class="modal-dialog modal-lg">
-    <div class="modal-content" style="height: 100%">
+    <div class="modal-content" style="height: 100vh">
       <div class="modal-header">
           <button type="button" class="btn btn-primary" @click="$router.back()" 
           style="cursor: pointer; float: left;">
