@@ -1,12 +1,11 @@
 <template>
   <div>
-            <iframe style="width: 90vw; overflow-y: scroll; height: 85vh;" 
+            <iframe style="width: 99vw; overflow-y: scroll; height: 85vh;" 
         src="https://www.bookwidgets.com/play/MK4MH9">
         </iframe>   
   </div>
 </template>
 <script>
-import MenuItem from '@/components/MenuItem';
 export default {
     components: {
     }
