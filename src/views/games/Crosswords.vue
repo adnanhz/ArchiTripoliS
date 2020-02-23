@@ -28,8 +28,8 @@
               Retour
           </button>
       </div>
-      <div class="modal-body" style="height: 100%;">
-        <iframe style="width: 100%; overflow-y: scroll; height: 99%;" 
+      <div class="modal-body" style="height: 85vh;">
+        <iframe style="width: 90vw; overflow-y: scroll; height: 85vh;" 
         src="https://www.bookwidgets.com/play/MK4MH9">
         </iframe>   
       </div>
