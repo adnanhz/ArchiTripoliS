@@ -7,7 +7,7 @@
       style="cursor: pointer; float: left; margin-top: 10px; margin-bottom: 10px;"
     >Retour</button>
     <iframe
-      style="width: 100vw; overflow-y: scroll; height: 99vh;"
+      style="width: 100vw; overflow-y: scroll; height: 91vh;"
       src="https://www.bookwidgets.com/play/MK4MH9"
     ></iframe>
   </div>
