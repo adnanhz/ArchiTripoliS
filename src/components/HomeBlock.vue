@@ -17,22 +17,30 @@
         />
       </div>
     </div>
-    <div style="margin-top: 20px;" v-if="title !== 'Projet' && title !== 'Tripoli au cours du temps'">
+    <div style="margin-top: 20px;" v-if="title !== 'Projet'">
       <span
-        v-if="title !== 'Évaluation'"
-        style="background-color: #926d33; color: white; padding: 20px; 
-              margin-top: 35px; cursor: pointer; font-size: 20px;"
-        @click="$emit('continue', title)"
-        
-      >Continuer</span>
-      <span
-        v-else
+        v-if="title == 'Évaluation'"
         data-toggle="modal"
         data-target="#jeu"
         style="background-color: #926d33; color: white; padding: 20px; margin-top: 35px; 
         cursor: pointer;  font-size: 20px;"
         @click="$emit('openIframe', 'https://www.survio.com/survey/d/O4Y6A7X6V8F8T4K8P')"
       >Continuer</span>
+      <span
+        v-else-if="title == 'Tripoli au cours du temps'"
+        data-toggle="modal"
+        data-target="#jeu"
+        style="background-color: #926d33; color: white; padding: 20px; margin-top: 35px; 
+        cursor: pointer;  font-size: 20px;"
+        @click="$emit('openIframe', 'https://www.youtube.com/embed/LDl3jpPXx9w')"
+      >Continuer</span>
+      <span
+        v-else
+        style="background-color: #926d33; color: white; padding: 20px; 
+              margin-top: 35px; cursor: pointer; font-size: 20px;"
+        @click="$emit('continue', title)"
+        
+      >Continuer</span>      
     </div>
   </div>
 </template>

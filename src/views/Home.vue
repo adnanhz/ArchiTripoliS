@@ -141,7 +141,7 @@
                 l’histoire à l’école.
               </p>
               <p>
-                Elle permet aussi aux apprenants du cycle complémentaire de découvrir
+                Il permet aussi aux apprenants du cycle complémentaire de découvrir
                 le patrimoine architectural de ̋ Tripoli ̋ qui fait partie de leur entourage et
                 par la suite de renforcer les liens entre les Tripolitains et leur ville natale.
                 En effet, Tripoli est riche d’un grand nombre de sites historiques datant de diverses
@@ -196,7 +196,8 @@ export default {
     goToPage(title) {
       switch (title) {
         case "Tripoli au cours du temps":
-          this.$router.push("/temps");
+          //this.$router.push("/temps");
+          this.iframeUrl = "https://www.youtube.com/embed/LDl3jpPXx9w"
           break;
         case "Sites historiques":
           this.$router.push("/sites-historiques");
@@ -222,7 +223,7 @@ export default {
           this.homeBlock.description = `
           Une vidéo animée présente les différents périodes et évènements 
           historiques qu'a traversé Tripoli (la deuxième ville du Liban) et qui ont abouti à la création de son 
-          riche patrimoine architectural.<br/><br/><i>En cours de préparation.</i>`;
+          riche patrimoine architectural.<br/>`;
           break;
         case "sites-historiques":
           this.homeBlock.title = "Sites historiques";

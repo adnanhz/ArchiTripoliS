@@ -17,6 +17,7 @@
         />
       </div>
       <div
+       id="hammam"
         class="game-category ebook"
         data-toggle="modal"
         data-target="#jeu"
@@ -26,6 +27,7 @@
         <h2 style="color: black;">Hammam Ezzeddine</h2>
       </div>
       <div
+        id="mosque"
         class="game-category ebook"
         data-toggle="modal"
         data-target="#jeu"
@@ -94,7 +96,14 @@ export default {
 }
 
 .ebook { 
-    background-image: url("~@/assets/book logo2.png");
+}
+
+#hammam {
+  background-image: url("~@/assets/Hammam Ezzedine e-book.png");
+}
+
+#mosque {
+  background-image: url("~@/assets/la Grande Mosquee.png");
 }
 
 .video { 
