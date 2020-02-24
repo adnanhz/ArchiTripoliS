@@ -56,7 +56,9 @@
         />
       </div>
     </div>
-    <div style="width: 50%; display: flex; display: -webkit-flex;; justify-content: center; -webkit-justify-content: center; align-items: center; -webkit-align-items: center;">
+    <div
+      style="width: 50%; display: flex; display: -webkit-flex;; justify-content: center; -webkit-justify-content: center; align-items: center; -webkit-align-items: center;"
+    >
       <HomeBlock
         v-if="homeBlock.show"
         :title="homeBlock.title"
@@ -82,8 +84,21 @@
         >archi.liban@gmail.com</a>
       </span>
     </div>
-    <div class="modal fade" id="jeu" tabindex="-1" data-backdrop="static"
-    data-keyboard="false">
+    <div
+      style="background-color: rgba(0, 0, 0, 0.7); 
+                color: white; position: fixed; bottom: 0px; right: 0px;
+                padding: 5px; font-size: 19px;"
+    >
+      <a
+        href="https://play.google.com/store/apps/details?id=com.architripolis.hiba&hl=en_US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+      >
+        <img width="200"
+          alt="Disponible sur Google Play"
+          src="https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png"
+        />
+      </a>
+    </div>
+    <div class="modal fade" id="jeu" tabindex="-1" data-backdrop="static" data-keyboard="false">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -160,8 +175,11 @@
               </p>
             </div>
             <div>
-              <button class='btn btn-primary btn-block' style="margin-top: 10px;"
-                      @click="showWelcome = false; $router.push('?noWelcome=1')">Démarrer</button>
+              <button
+                class="btn btn-primary btn-block"
+                style="margin-top: 10px;"
+                @click="showWelcome = false; $router.push('?noWelcome=1')"
+              >Démarrer</button>
             </div>
           </div>
         </div>
@@ -197,7 +215,7 @@ export default {
       switch (title) {
         case "Tripoli au cours du temps":
           //this.$router.push("/temps");
-          this.iframeUrl = "https://www.youtube.com/embed/LDl3jpPXx9w"
+          this.iframeUrl = "https://www.youtube.com/embed/LDl3jpPXx9w";
           break;
         case "Sites historiques":
           this.$router.push("/sites-historiques");
@@ -298,6 +316,6 @@ l'usage de ce logiciel.
 }
 
 .apropos {
-  background-image: url('~@/assets/background.jpg');
+  background-image: url("~@/assets/background.jpg");
 }
 </style>

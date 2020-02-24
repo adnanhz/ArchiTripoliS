@@ -56,10 +56,11 @@
               Retour
             </button>
           </div>
+          <!-- 590 x 475 -->
           <div class="modal-body" style="height: 100%;">
             <iframe v-if="iframeUrl.length > 0"
               allowfullscreen
-              width="590" height="475"
+              width="100%" height="100%"
               :src="iframeUrl"
             ></iframe>
           </div>
