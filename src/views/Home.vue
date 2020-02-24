@@ -92,7 +92,7 @@
       <a
         href="https://play.google.com/store/apps/details?id=com.architripolis.hiba&hl=en_US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
       >
-        <img width="200"
+        <img width="150"
           alt="Disponible sur Google Play"
           src="https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png"
         />
