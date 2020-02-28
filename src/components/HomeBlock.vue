@@ -34,7 +34,7 @@
         data-target="#jeu"
         style="background-color: #926d33; color: white; padding: 20px; margin-top: 35px; 
         cursor: pointer;  font-size: 20px;"
-        @click="$emit('openIframe', 'https://www.youtube.com/embed/LDl3jpPXx9w')"
+        @click="$emit('openIframe', 'https://www.youtube.com/embed/VyzSzxwTsWw')"
       >Continuer</span>
       <span
         v-else
