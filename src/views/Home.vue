@@ -80,8 +80,8 @@
         Contactez-nous:
         <a
           style="text-decoration: underline; color: white;"
-          href="mailto:archi.liban@gmail.com"
-        >archi.liban@gmail.com</a>
+          href="mailto:arch.liban@gmail.com"
+        >arch.liban@gmail.com</a>
       </span>
     </div>
     <div
@@ -215,7 +215,7 @@ export default {
       switch (title) {
         case "Tripoli au cours du temps":
           //this.$router.push("/temps");
-          this.iframeUrl = "https://www.youtube.com/embed/LDl3jpPXx9w";
+          this.iframeUrl = "https://www.youtube.com/embed/VyzSzxwTsWw";
           break;
         case "Sites historiques":
           this.$router.push("/sites-historiques");
