@@ -1,5 +1,5 @@
 <template>
-  <div class="home container-fluid" style="display: flex; display: -webkit-flex;;">
+  <div class="home container-fluid" style="display: flex; display: -webkit-flex;">
     <div
       style="width: 50%; display: flex; display: -webkit-flex;; justify-content: center; -webkit-justify-content: center; 
       flex-direction: column; align-items: center; -webkit-align-items: center; padding-top: 20px; margin-left: 15px;"
@@ -57,7 +57,7 @@
       </div>
     </div>
     <div
-      style="width: 50%; display: flex; display: -webkit-flex;; justify-content: center; -webkit-justify-content: center; align-items: center; -webkit-align-items: center;"
+      style="min-width: 380px; width: 50%; display: flex; display: -webkit-flex;; justify-content: center; -webkit-justify-content: center; align-items: center; -webkit-align-items: center;"
     >
       <HomeBlock
         v-if="homeBlock.show"
@@ -80,8 +80,8 @@
         Contactez-nous:
         <a
           style="text-decoration: underline; color: white;"
-          href="mailto:archi.liban@gmail.com"
-        >archi.liban@gmail.com</a>
+          href="mailto:arch.liban@gmail.com"
+        >arch.liban@gmail.com</a>
       </span>
     </div>
     <div class="modal fade" id="jeu" tabindex="-1" data-backdrop="static" data-keyboard="false">
@@ -201,7 +201,7 @@ export default {
       switch (title) {
         case "Tripoli au cours du temps":
           //this.$router.push("/temps");
-          this.iframeUrl = "https://www.youtube.com/embed/LDl3jpPXx9w";
+          this.iframeUrl = "https://www.youtube.com/embed/VyzSzxwTsWw";
           break;
         case "Sites historiques":
           this.$router.push("/sites-historiques");

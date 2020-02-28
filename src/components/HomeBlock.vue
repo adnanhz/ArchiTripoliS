@@ -1,6 +1,8 @@
 <template>
   <div
-    style="background-color: #f5f5f5; opacity: 0.95; border: 2px solid #926d33; border-radius: 2px; height: 480px; width: 80%;"
+    style="background-color: #f5f5f5; 
+    opacity: 0.95; border: 2px solid #926d33; border-radius: 2px; height: 480px; 
+    min-width: 350px; width: 80%"
   >
     <div style="height: 80px;">
       <span style="font-size: 30px; width: 100%; color: #926d33;">{{title}}</span>
@@ -24,7 +26,7 @@
         data-target="#jeu"
         style="background-color: #926d33; color: white; padding: 20px; margin-top: 35px; 
         cursor: pointer;  font-size: 20px;"
-        @click="$emit('openIframe', 'https://www.survio.com/survey/d/O4Y6A7X6V8F8T4K8P')"
+        @click="$emit('openIframe', 'https://www.survio.com/survey/d/P0H6P8A2I4Q3M5V4I')"
       >Continuer</span>
       <span
         v-else-if="title == 'Tripoli au cours du temps'"

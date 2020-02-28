@@ -19,6 +19,10 @@ export default {
 }
 </script>
 <style lang="scss">
+.modal-header {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
 #app {
   min-width: 1024px;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
