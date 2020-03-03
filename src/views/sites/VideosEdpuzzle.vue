@@ -41,10 +41,10 @@
         class="game-category video"
         data-toggle="modal"
         data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e10086b5171d840ad6407e9/watch'"
+        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e5b830d2336af40b88b96be/watch'"
       >
         <div class="game-category-inner"></div>
-        <h2 style="color: black;">Code<br/>bedhiwu</h2>
+        <h2 style="color: black;">Code<br/>obofuma</h2>
       </div>                 
     </div>
     <!-- Modal -->
