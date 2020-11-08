@@ -32,7 +32,7 @@
         data-target="#activite"
         style="background-color: #926d33; color: white; padding: 20px; margin-top: 35px; 
         cursor: pointer;  font-size: 20px;"
-        @click="$emit('openIframe', 'https://www.youtube.com/embed/GFgBqB1-e_M')"
+        @click="$emit('openIframe', 'https://www.youtube.com/embed/sFju4dzz5J4')"
       >Continuer</span>
       <span
         v-else
