@@ -13,7 +13,7 @@
           src="~@/assets/powtoon.jpg"
           data-toggle="modal"
           data-target="#activite"
-          @click="$emit('openIframe', 'https://www.youtube.com/embed/sFju4dzz5J4')"
+          @click="$emit('openIframe', 'https://www.youtube.com/embed/GFgBqB1-e_M')"
         />
       </div>
     </div>
@@ -32,7 +32,7 @@
         data-target="#activite"
         style="background-color: #926d33; color: white; padding: 20px; margin-top: 35px; 
         cursor: pointer;  font-size: 20px;"
-        @click="$emit('openIframe', 'https://www.youtube.com/embed/VyzSzxwTsWw')"
+        @click="$emit('openIframe', 'https://www.youtube.com/embed/GFgBqB1-e_M')"
       >Continuer</span>
       <span
         v-else

@@ -170,7 +170,7 @@
                 <br />- Hammam Ezzedine
                 <br />- Beaucoup d’autres sites historiques (Caravansérails خانات , Mosquées مساجد ,
                 Eglises كنائس , Ecoles Coraniques مدارس قرآنية , Bains Publics حمامات ,
-                Tours défensifs أبراج دفاعية , Khankah خانقة… (.
+                Tours défensifs أبراج دفاعية , Khankah خانقة… ).
                 <br />N’hésitez pas à découvrir ce site web "ArchiTripoliS".
               </p>
             </div>
