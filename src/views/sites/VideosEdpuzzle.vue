@@ -22,33 +22,33 @@
       <div
         class="game-category video"
         data-toggle="modal"
-        data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1004316f573740a6905fdc/watch'"
+        data-target="#activite"
+        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1a719f8047cc413c46f67e/watch'"
       >
         <div class="game-category-inner"></div>
-        <h2 style="color: black;">Code<br/>ezahise</h2>
+        <h2 style="color: black;">Code<br/>vedfavj</h2>
       </div>
       <div
         class="game-category video"
         data-toggle="modal"
-        data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e4d6f63bdbd4940ae030170/watch'"
+        data-target="#activite"
+        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1a718175f58e413552c8a6/watch'"
       >
         <div class="game-category-inner"></div>
-        <h2 style="color: black;">Code<br/>lolohuc</h2>
+        <h2 style="color: black;">Code<br/>hubolge</h2>
       </div>
       <div
         class="game-category video"
         data-toggle="modal"
-        data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e5b830d2336af40b88b96be/watch'"
+        data-target="#activite"
+        style="cursor: pointer" @click="iframeUrl = 'https://edpuzzle.com/embed/assignments/5e1236c589522e40ac333013/watch'"
       >
         <div class="game-category-inner"></div>
-        <h2 style="color: black;">Code<br/>obofuma</h2>
+        <h2 style="color: black;">Code<br/>tusetof</h2>
       </div>                 
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="jeu" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="modal fade" id="activite" tabindex="-1" data-backdrop="static" data-keyboard="false">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">

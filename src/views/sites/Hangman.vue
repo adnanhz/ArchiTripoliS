@@ -19,7 +19,7 @@
       <div
         class="game-category pendu"
         data-toggle="modal"
-        data-target="#jeu"
+        data-target="#activite"
         style="cursor: pointer" @click="iframeUrl = 'https://read.bookcreator.com/OpV1AYH7OQhgKCHzRYvpDjmNZjl1/xL4EJfahQOW_5LZCK3xP6g'"
       >
         <div class="game-category-inner">1</div>
@@ -27,7 +27,7 @@
       <div
         class="game-category pendu"
         data-toggle="modal"
-        data-target="#jeu"
+        data-target="#activite"
         style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/MKGLGX'"
       >
         <div class="game-category-inner">2</div>
@@ -35,7 +35,7 @@
       <div
         class="game-category pendu"
         data-toggle="modal"
-        data-target="#jeu"
+        data-target="#activite"
         style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/AKGLH9'"
       >
         <div class="game-category-inner">3</div>
@@ -43,7 +43,7 @@
       <div
         class="game-category pendu"
         data-toggle="modal"
-        data-target="#jeu"
+        data-target="#activite"
         style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/VKB93L'"
       >
         <div class="game-category-inner">4</div>
@@ -51,14 +51,14 @@
       <div
         class="game-category pendu"
         data-toggle="modal"
-        data-target="#jeu"
+        data-target="#activite"
         style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/JKB9V5'"
       >
         <div class="game-category-inner">5</div>
       </div>                 
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="jeu" tabindex="-1">
+    <div class="modal fade" id="activite" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">

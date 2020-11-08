@@ -42,14 +42,14 @@
             <div
               style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/JLB77U?teacher_id=5540252375580672'"
               data-toggle="modal"
-              data-target="#jeu"
+              data-target="#activite"
               class="edpuzzle-logo"
             ></div>
           </div>
         </HomeBlock>
       </div>
     </div>
-    <div class="modal fade" id="jeu" tabindex="-1">
+    <div class="modal fade" id="activite" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">

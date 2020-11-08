@@ -18,7 +18,7 @@
       </div>
     </div>
     <!-- Modal -->
-    <div class="modal in" style="display: block; height: 90vh; top: 70px;" id="jeu" tabindex="-1">
+    <div class="modal in" style="display: block; height: 90vh; top: 70px;" id="activite" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-body" style="height: 100%;">

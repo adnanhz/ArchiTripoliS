@@ -1,17 +1,39 @@
 <template>
   <div class="crosswords container-fluid">
     <div
-      style="display: flex; display: -webkit-flex;; flex-wrap: wrap; justify-content: space-around; align-items: center; -webkit-align-items: center;"
+      style="
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-align-items: center;
+      "
     >
-      <div style="width: 100%; display: flex; display: -webkit-flex;; justify-content: space-between;">
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          display: -webkit-flex;
+          justify-content: space-between;
+        "
+      >
         <span
-          style="width: 10%; height: 94px; background-color: white; 
-                    padding: 15px; margin-top: 10px; border: 6px solid #f5f5f5;
-                    font-size: 40px;cursor: pointer;"
+          style="
+            width: 10%;
+            height: 94px;
+            background-color: white;
+            padding: 15px;
+            margin-top: 10px;
+            border: 6px solid #f5f5f5;
+            font-size: 40px;
+            cursor: pointer;
+          "
           @click="$router.back()"
-        ><i class="icon ion-md-arrow-round-back"></i></span>
+          ><i class="icon ion-md-arrow-round-back"></i
+        ></span>
         <MenuItem
-          style="margin-bottom: 150px; width: 89%; font-size: 40px;"
+          style="margin-bottom: 150px; width: 89%; font-size: 40px"
           bgcolor="#3f5756"
           title="Les puzzles"
         />
@@ -19,65 +41,79 @@
       <div
         class="game-category puzzles"
         data-toggle="modal"
-        data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/UK4MJZ'"
+        data-target="#activite"
+        style="cursor: pointer"
+        @click="iframeUrl = 'https://www.bookwidgets.com/play/UK4MJZ'"
       >
         <div class="game-category-inner">1</div>
       </div>
       <div
         class="game-category puzzles"
         data-toggle="modal"
-        data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/RK4MK3'"
+        data-target="#activite"
+        style="cursor: pointer"
+        @click="iframeUrl = 'https://www.bookwidgets.com/play/RK4MK3'"
       >
         <div class="game-category-inner">2</div>
       </div>
       <div
         class="game-category puzzles"
         data-toggle="modal"
-        data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/2KGLCN'"
+        data-target="#activite"
+        style="cursor: pointer"
+        @click="iframeUrl = 'https://www.bookwidgets.com/play/2KGLCN'"
       >
         <div class="game-category-inner">3</div>
       </div>
       <div
         class="game-category puzzles"
         data-toggle="modal"
-        data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/WKGLEQ'"
+        data-target="#activite"
+        style="cursor: pointer"
+        @click="iframeUrl = 'https://www.bookwidgets.com/play/WKGLEQ'"
       >
         <div class="game-category-inner">4</div>
       </div>
       <div
         class="game-category puzzles"
         data-toggle="modal"
-        data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/RKGLDW'"
+        data-target="#activite"
+        style="cursor: pointer"
+        @click="iframeUrl = 'https://www.bookwidgets.com/play/RKGLDW'"
       >
         <div class="game-category-inner">5</div>
-      </div>  
+      </div>
       <div
         class="game-category puzzles"
         data-toggle="modal"
-        data-target="#jeu"
-        style="cursor: pointer" @click="iframeUrl = 'https://www.bookwidgets.com/play/KKCGJ7'"
+        data-target="#activite"
+        style="cursor: pointer"
+        @click="iframeUrl = 'https://www.bookwidgets.com/play/KKCGJ7'"
       >
         <div class="game-category-inner">6</div>
-      </div>                
+      </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="jeu" tabindex="-1">
+    <div class="modal fade" id="activite" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="btn btn-primary" @click="$router.back(); iframeUrl = ''" style="cursor: pointer;">
+            <button
+              type="button"
+              class="btn btn-primary"
+              @click="
+                $router.back();
+                iframeUrl = '';
+              "
+              style="cursor: pointer"
+            >
               Retour
             </button>
           </div>
-          <div class="modal-body" style="height: 100%;">
+          <div class="modal-body" style="height: 100%">
             <iframe
-            v-if="iframeUrl.length > 0"
-              style="width: 100%; overflow-y: scroll; height: 100%;"
+              v-if="iframeUrl.length > 0"
+              style="width: 100%; overflow-y: scroll; height: 100%"
               :src="iframeUrl"
             ></iframe>
           </div>
@@ -91,12 +127,12 @@ import MenuItem from "@/components/MenuItem";
 export default {
   data() {
     return {
-      iframeUrl: ''
-    }
+      iframeUrl: "",
+    };
   },
   components: {
-    MenuItem
-  }
+    MenuItem,
+  },
 };
 </script>
 <style scoped>
@@ -132,9 +168,12 @@ export default {
   background-color: rgba(0, 0, 0, 0.4);
   width: 200px;
   height: 200px;
-  display: flex; display: -webkit-flex;;
-  align-items: center; -webkit-align-items: center;
-  justify-content: center; -webkit-justify-content: center;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
   font-weight: bold;
   font-size: 86px;
 }

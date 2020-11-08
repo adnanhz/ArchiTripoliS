@@ -22,7 +22,7 @@
       <div
         class="game-category video"
         data-toggle="modal"
-        data-target="#jeu"
+        data-target="#activite"
         style="cursor: pointer" @click="iframeUrl = 'https://www.youtube.com/embed/sZg4YWNQOts'"
       >
         <div class="game-category-inner"></div>
@@ -31,7 +31,7 @@
       <div
         class="game-category video"
         data-toggle="modal"
-        data-target="#jeu"
+        data-target="#activite"
         style="cursor: pointer" @click="iframeUrl = 'https://www.youtube.com/embed/HU0YAsdijWs'"
       >
         <div class="game-category-inner"></div>
@@ -40,7 +40,7 @@
       <div
         class="game-category video"
         data-toggle="modal"
-        data-target="#jeu"
+        data-target="#activite"
         style="cursor: pointer" @click="iframeUrl = 'https://www.youtube.com/embed/vbRORqIVsbA'"
       >
         <div class="game-category-inner"></div>
@@ -48,7 +48,7 @@
       </div>                 
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="jeu" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="modal fade" id="activite" tabindex="-1" data-backdrop="static" data-keyboard="false">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">

@@ -20,7 +20,7 @@
         <div
           class="game-category ebook"   
           data-toggle="modal"
-          data-target="#jeu"
+          data-target="#activite"
           @click="openBlock('ebook')"
         ></div>
         <div
